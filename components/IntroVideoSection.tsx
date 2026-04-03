@@ -5,16 +5,17 @@ import { motion } from "framer-motion";
 const VIDEO_SRC =
   "https://res.cloudinary.com/da3abynbu/video/upload/q_auto/f_auto/v1775221576/portfolio-video_r2vz1d.mov";
 
-// サイト紹介動画（ヒーロー直下・左動画 / 右テキスト）
+// サイト紹介動画（グリッドで左右均等・デスクトップでアンバランス解消）
 export function IntroVideoSection() {
   return (
     <section
       aria-labelledby="about-site-heading"
-      className="py-12 sm:py-16 border-t border-zinc-800/60"
+      className="w-full py-12 sm:py-16 border-t border-zinc-800/60"
     >
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 lg:items-center">
+      <div className="grid w-full grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-x-10 xl:gap-x-12">
+        {/* 動画カラム：セル内で中央寄せ（左右に余白が偏らない） */}
         <motion.div
-          className="w-full lg:w-auto lg:flex-shrink-0 flex justify-center lg:justify-start"
+          className="flex min-w-0 justify-center"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -24,12 +25,13 @@ export function IntroVideoSection() {
             src={VIDEO_SRC}
             playsInline
             controls
-            className="max-h-[300px] w-auto max-w-full rounded-2xl border border-zinc-800 shadow-2xl bg-black object-contain"
+            className="mx-auto h-auto w-full max-w-[min(100%,480px)] max-h-[min(480px,78svh)] rounded-2xl border border-zinc-800 bg-black object-contain shadow-2xl lg:w-auto lg:max-w-full lg:max-h-[min(440px,52vh)]"
           />
         </motion.div>
 
+        {/* テキストカラム：モバイルは中央、lg+ は左（グリッド右列として自然に埋まる） */}
         <motion.div
-          className="flex-1 flex flex-col justify-center gap-5 text-left min-w-0 lg:min-h-[300px]"
+          className="flex min-w-0 flex-col justify-center gap-5 text-center lg:min-h-[min(440px,52vh)] lg:text-left"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -37,11 +39,11 @@ export function IntroVideoSection() {
         >
           <h2
             id="about-site-heading"
-            className="text-2xl sm:text-3xl font-bold text-white tracking-tight"
+            className="text-2xl font-bold tracking-tight text-white sm:text-3xl"
           >
             About This Site
           </h2>
-          <div className="space-y-4 text-zinc-300 text-base sm:text-lg leading-relaxed">
+          <div className="space-y-4 text-base leading-relaxed text-zinc-300 sm:text-lg">
             <p>Have questions about me?</p>
             <p>Just ask the AI chat below.</p>
             <p>
