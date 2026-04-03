@@ -12,9 +12,9 @@ export function IntroVideoSection() {
       aria-labelledby="about-site-heading"
       className="py-12 sm:py-16 border-t border-zinc-800/60"
     >
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 lg:items-start">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 lg:items-center">
         <motion.div
-          className="w-full lg:w-[min(100%,420px)] lg:flex-shrink-0 flex justify-center lg:justify-start"
+          className="w-full lg:w-auto lg:flex-shrink-0 flex justify-center lg:justify-start"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -24,12 +24,12 @@ export function IntroVideoSection() {
             src={VIDEO_SRC}
             playsInline
             controls
-            className="w-full max-w-md rounded-2xl border border-zinc-800 shadow-2xl bg-black aspect-[9/16] object-cover"
+            className="max-h-[300px] w-auto max-w-full rounded-2xl border border-zinc-800 shadow-2xl bg-black object-contain"
           />
         </motion.div>
 
         <motion.div
-          className="flex-1 flex flex-col justify-center gap-5 text-left min-w-0"
+          className="flex-1 flex flex-col justify-center gap-5 text-left min-w-0 lg:min-h-[300px]"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
