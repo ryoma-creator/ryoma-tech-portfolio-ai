@@ -45,6 +45,6 @@ src/
 └── types/         # 型定義
 
 【API使用制限】
-- 1セッションあたり10回まで
-- 制限に達したら「You've reached the limit. Contact me directly!」と表示
+- 1日あたり10回まで（日付が変わるとリセット）
+- 制限に達したら直接連絡を促す文言を表示
 - LocalStorageで回数管理
