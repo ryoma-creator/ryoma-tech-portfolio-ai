@@ -23,8 +23,11 @@ export interface Project {
   description: string;
   category: ProjectCategory;
   tags: string[];
-  /** Cloudinary Video Player などの埋め込み URL（画像より優先） */
+  /** ネイティブ video 用（Cloudinary 直リンク等）。最優先で表示 */
+  videoUrl?: string;
+  /** iframe 埋め込み（videoUrl が無いとき）。動画が表示されない環境向け */
   videoEmbedUrl?: string;
+  /** サムネイル（静止画）または video の poster */
   imageUrl?: string;
   liveUrl?: string;
   githubUrl?: string;
