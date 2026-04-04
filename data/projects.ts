@@ -55,8 +55,8 @@ export const projects: Project[] = [
       "Internal-style support dashboard with AI-assisted workflows. Screen recording demo (Cloudinary).",
     category: "ai-assisted",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI"],
-    videoUrl:
-      "https://res.cloudinary.com/dnm2fyhwt/video/upload/q_auto,f_mp4/Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8.mp4",
+    videoEmbedUrl:
+      "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8.jpg",
   },
@@ -92,6 +92,7 @@ export const projects: Project[] = [
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "Framer Motion", "JavaScript", "API"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
+    githubUrl: "https://github.com/ryoma-creator/ecommerce",
   },
   {
     id: "weather-app",
@@ -101,6 +102,8 @@ export const projects: Project[] = [
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "JavaScript", "Weather API"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Weather+App",
+    liveUrl: "https://weather-app-eight-amber-29.vercel.app",
+    githubUrl: "https://github.com/ryoma-creator/weather-app",
   },
   {
     id: "todo-app",

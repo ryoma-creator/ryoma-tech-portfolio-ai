@@ -3,8 +3,23 @@
 import Image from "next/image";
 import type { Project } from "@/types";
 
-// カード上部のメディア（動画 → 埋め込み → 画像 → プレースホルダー）
+// カード上部のメディア（iframe 埋め込み → ネイティブ動画 → 画像 → プレースホルダー）
 export function ProjectCardMedia({ project }: { project: Project }) {
+  if (project.videoEmbedUrl) {
+    return (
+      <div className="relative aspect-video w-full bg-black">
+        <iframe
+          src={project.videoEmbedUrl}
+          title={`${project.title} demo video`}
+          className="absolute inset-0 h-full w-full border-0"
+          allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+    );
+  }
+
   if (project.videoUrl) {
     return (
       <div className="relative aspect-video w-full bg-black">
@@ -17,20 +32,6 @@ export function ProjectCardMedia({ project }: { project: Project }) {
         >
           <source src={project.videoUrl} type="video/mp4" />
         </video>
-      </div>
-    );
-  }
-
-  if (project.videoEmbedUrl) {
-    return (
-      <div className="relative aspect-video w-full bg-black">
-        <iframe
-          src={project.videoEmbedUrl}
-          title={`${project.title} demo video`}
-          className="absolute inset-0 h-full w-full border-0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
       </div>
     );
   }
