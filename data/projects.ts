@@ -42,6 +42,16 @@ export const projects: Project[] = [
     tags: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/ryoma-creator/ryoma-tech-portfolio-ai",
   },
+  {
+    id: "support-ai-dashboard",
+    title: "Support AI Dashboard",
+    description:
+      "Internal-style support dashboard with AI-assisted workflows. Screen recording demo via Cloudinary embed.",
+    category: "ai-assisted",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI"],
+    videoEmbedUrl:
+      "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8",
+  },
 
   // ── Hand-Coded Projects ──────────────────────────────────────────
   {

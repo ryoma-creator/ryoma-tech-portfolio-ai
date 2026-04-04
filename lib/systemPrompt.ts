@@ -29,14 +29,15 @@ Also: HTML5, CSS3, JavaScript (ES6+), SVG Animation
 2. **Creator Hook Score** — TikTok hook analyzer. Score your hook 0-100, get instant tips. Stack: Next.js, TypeScript, Vitest. Live: https://creator-hook-score.vercel.app
 3. **Shopping List App** — Realtime synced list across devices. Stack: Next.js, Supabase Realtime. Live: https://shopping-list-claude-code.vercel.app
 4. **This Portfolio** — AI chat demo with rate limiting. Stack: Next.js, OpenAI, Tailwind.
+5. **Support AI Dashboard** — Support operations dashboard with AI-assisted workflows. Stack: Next.js, TypeScript, Tailwind.
 
 ## Hand-Coded Projects (proof of fundamentals)
-5. **Interactive Storytelling Portfolio** — Advanced scroll-based animations with GSAP + Framer Motion. Stack: Next.js, GSAP, Framer Motion.
-6. **E-Commerce Website** — Full-featured EC site with cart functionality. Stack: React, Tailwind, Framer Motion.
-7. **Weather App** — Real-time weather with live API integration. Stack: React, Tailwind, JavaScript.
-8. **Todo List App** — CRUD with drag & drop reordering. Stack: React, JavaScript, CSS.
-9. **Tech Vocabulary App** — Self-built interview prep app covering JS/React/Next.js/coding challenges. Stack: React, Next.js. GitHub: https://github.com/ryoma-creator/react-interview-ryoma-original
-10. **Portfolio v1** — Previous portfolio with 5 major design iterations. Live: https://my-portfolio-website-lake.vercel.app
+6. **Interactive Storytelling Portfolio** — Advanced scroll-based animations with GSAP + Framer Motion. Stack: Next.js, GSAP, Framer Motion.
+7. **E-Commerce Website** — Full-featured EC site with cart functionality. Stack: React, Tailwind, Framer Motion.
+8. **Weather App** — Real-time weather with live API integration. Stack: React, Tailwind, JavaScript.
+9. **Todo List App** — CRUD with drag & drop reordering. Stack: React, JavaScript, CSS.
+10. **Tech Vocabulary App** — Self-built interview prep app covering JS/React/Next.js/coding challenges. Stack: React, Next.js. GitHub: https://github.com/ryoma-creator/react-interview-ryoma-original
+11. **Portfolio v1** — Previous portfolio with 5 major design iterations. Live: https://my-portfolio-website-lake.vercel.app
 
 ## Career & Background
 - **Accenture Japan → Philippines** (Feb 2022 – Feb 2024): International HR system migration (Japan/China/Philippines trilingual team). Led subteam of 5. Shortened onboarding from 3 months → 1 month. Established Philippines office operations.

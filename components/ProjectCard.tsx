@@ -20,22 +20,29 @@ export function ProjectCard({ project, index }: Props) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="group relative bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 transition-all duration-300"
     >
-      {/* プロジェクト画像（あれば） */}
-      {project.imageUrl && (
-        <div className="relative w-full h-36 overflow-hidden">
+      {/* 動画埋め込み（Cloudinary 等）→ 画像 → プレースホルダー */}
+      {project.videoEmbedUrl ? (
+        <div className="relative aspect-video w-full bg-black">
+          <iframe
+            src={project.videoEmbedUrl}
+            title={`${project.title} demo video`}
+            className="absolute inset-0 h-full w-full border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      ) : project.imageUrl ? (
+        <div className="relative h-36 w-full overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.title}
             fill
-            className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900/80" />
         </div>
-      )}
-
-      {/* 画像がない場合のプレースホルダー */}
-      {!project.imageUrl && (
-        <div className="w-full h-24 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
+      ) : (
+        <div className="flex h-24 w-full items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-900">
           <span className="text-3xl opacity-40">
             {project.category === "ai-assisted" ? "🤖" : "💻"}
           </span>
