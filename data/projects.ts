@@ -63,7 +63,10 @@ export const projects: Project[] = [
       "This very portfolio — built with AI-assisted development. Features a rate-limited AI chat powered by OpenAI that knows Ryoma's full story.",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=AI+Chat+Portfolio",
+    videoUrl:
+      "https://res.cloudinary.com/da3abynbu/video/upload/f_mp4,vc_h264,q_auto/ai-portfolio_q8u8yi.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/da3abynbu/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/ai-portfolio_q8u8yi.jpg",
     githubUrl: "https://github.com/ryoma-creator/ryoma-tech-portfolio-ai",
     builtAt: "2026-04",
   },
@@ -71,9 +74,9 @@ export const projects: Project[] = [
     id: "support-ai-dashboard",
     title: "Support AI Dashboard",
     description:
-      "Internal-style support dashboard with AI-assisted workflows. Screen recording demo (Cloudinary).",
+      "Support ticket dashboard with a Next.js API route that calls OpenAI gpt-4o-mini to auto-triage tickets — classifying category, priority, sentiment, and generating a suggested customer reply.",
     category: "ai-assisted",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI"],
+    tags: ["Next.js", "Node.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     videoEmbedUrl:
       "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8&loop=true&autoplay=true&muted=true",
     imageUrl:
@@ -87,9 +90,9 @@ export const projects: Project[] = [
     id: "portfolio-v1",
     title: "Portfolio Website v1",
     description:
-      "Previous personal portfolio. 5 major design iterations in one year. Built with Framer Motion animations and a focus on UI/UX craft.",
+      "Personal portfolio with 5 major design iterations. Includes a server-side contact form with auto-reply email via API route. Built with Framer Motion animations and shadcn/ui components.",
     category: "hand-coded",
-    tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
+    tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
     liveUrl: "https://my-portfolio-website-lake.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/portfolio-3",
     builtAt: "2025-02",
