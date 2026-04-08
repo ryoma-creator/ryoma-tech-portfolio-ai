@@ -5,6 +5,17 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   // ── AI-Assisted Projects ─────────────────────────────────────────
   {
+    id: "ai-intelligence-monitor",
+    title: "AI Intelligence Monitor",
+    description:
+      "Real-time AI industry news dashboard. Pulls from 5 RSS feeds and HackerNews, runs each article through gpt-4o-mini for an English or Japanese summary, importance score (1–10), and trend tags — all surfaced in a filterable feed.",
+    category: "ai-assisted",
+    tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "RSS"],
+    imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=AI+Intelligence+Monitor",
+    liveUrl: "https://ai-intelligence-monitor.vercel.app/",
+    githubUrl: "https://github.com/ryoma-creator/ai-intelligence-monitor",
+  },
+  {
     id: "ai-helpdesk",
     title: "AI Internal Helpdesk SaaS",
     description:
@@ -56,9 +67,10 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI"],
     videoEmbedUrl:
-      "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8",
+      "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8&loop=true&autoplay=true&muted=true",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8.jpg",
+    liveUrl: "https://support-ai-dashboard.vercel.app/",
   },
 
   // ── Hand-Coded Projects ──────────────────────────────────────────
@@ -75,16 +87,6 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dnm2fyhwt/image/upload/v1733368949/portfoliowebsite_eiuwcq.png",
   },
   {
-    id: "interactive-storytelling",
-    title: "Interactive Storytelling Portfolio",
-    description:
-      "Advanced scroll-based storytelling experience with complex animations. Built to push the limits of what's possible on the web with GSAP and Framer Motion.",
-    category: "hand-coded",
-    tags: ["Next.js", "GSAP", "Framer Motion", "Tailwind CSS", "React"],
-    imageUrl:
-      "https://placehold.co/800x450/18181b/737373/png?text=Interactive+Story",
-  },
-  {
     id: "ecommerce",
     title: "E-Commerce Website",
     description:
@@ -92,6 +94,7 @@ export const projects: Project[] = [
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "Framer Motion", "JavaScript", "API"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
+    liveUrl: "https://ecommerce-p66q.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ecommerce",
   },
   {
@@ -113,6 +116,7 @@ export const projects: Project[] = [
     category: "hand-coded",
     tags: ["React", "JavaScript", "CSS", "Drag & Drop"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Todo+App",
+    liveUrl: "https://todo-app-kappa-ochre.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/to-do-app-claude-code",
   },
   {
