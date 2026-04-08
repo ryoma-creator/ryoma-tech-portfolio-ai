@@ -12,7 +12,7 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "RSS"],
     videoUrl:
-      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.mp4",
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_2,f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.mp4",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.jpg",
     autoplay: true,
