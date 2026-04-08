@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // プロジェクト一覧セクション
 export function ProjectsSection() {
+  const { t } = useLanguage();
   const aiProjects = projects.filter((p) => p.category === "ai-assisted");
   const handCodedProjects = projects.filter((p) => p.category === "hand-coded");
 
@@ -19,10 +21,8 @@ export function ProjectsSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Projects</h2>
-        <p className="text-zinc-500 text-sm">
-          Real apps. Shipped. Live.
-        </p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">{t.projects}</h2>
+        <p className="text-zinc-500 text-sm">{t.projectsSubtitle}</p>
       </motion.div>
 
       {/* AIアシスト制作 */}
@@ -36,10 +36,10 @@ export function ProjectsSection() {
             transition={{ duration: 0.4 }}
           >
             <span className="text-xs font-semibold text-zinc-400 uppercase tracking-widest">
-              AI-Assisted
+              {t.aiAssisted}
             </span>
             <div className="flex-1 h-px bg-zinc-800" />
-            <span className="text-xs text-zinc-600">{aiProjects.length} projects</span>
+            <span className="text-xs text-zinc-600">{t.projectsCount.replace("{n}", String(aiProjects.length))}</span>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {aiProjects.map((project, i) => (
@@ -60,10 +60,10 @@ export function ProjectsSection() {
             transition={{ duration: 0.4 }}
           >
             <span className="text-xs font-semibold text-zinc-400 uppercase tracking-widest">
-              Hand-Coded
+              {t.handCoded}
             </span>
             <div className="flex-1 h-px bg-zinc-800" />
-            <span className="text-xs text-zinc-600">{handCodedProjects.length} projects</span>
+            <span className="text-xs text-zinc-600">{t.projectsCount.replace("{n}", String(handCodedProjects.length))}</span>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {handCodedProjects.map((project, i) => (

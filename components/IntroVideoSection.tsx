@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const VIDEO_SRC =
   "https://res.cloudinary.com/da3abynbu/video/upload/q_auto/f_auto/v1775221576/portfolio-video_r2vz1d.mov";
 
 // サイト紹介動画（グリッドで左右均等・デスクトップでアンバランス解消）
 export function IntroVideoSection() {
+  const { t } = useLanguage();
   return (
     <section
       aria-labelledby="about-site-heading"
@@ -41,16 +43,12 @@ export function IntroVideoSection() {
             id="about-site-heading"
             className="text-2xl font-bold tracking-tight text-white sm:text-3xl"
           >
-            About This Site
+            {t.aboutTitle}
           </h2>
           <div className="space-y-4 text-base leading-relaxed text-zinc-300 sm:text-lg">
-            <p>Have questions about me?</p>
-            <p>Just ask the AI chat below.</p>
-            <p>
-              My background, skills, hobbies — anything.
-              <br />
-              It knows me well.
-            </p>
+            <p>{t.aboutP1}</p>
+            <p>{t.aboutP2}</p>
+            <p>{t.aboutP3}</p>
           </div>
         </motion.div>
       </div>

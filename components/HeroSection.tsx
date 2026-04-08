@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // ヒーローセクション（名前・CTA）
 export function HeroSection() {
+  const { t } = useLanguage();
   return (
     <section className="relative flex flex-col items-center text-center md:items-start md:text-left pt-20 pb-12 sm:pb-16 px-4 overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -18,7 +20,7 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-          Available for projects · Remote friendly
+          {t.available}
         </motion.span>
 
         <motion.h1
@@ -27,7 +29,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Hi, I&apos;m Ryoma
+          {t.heroTitle}
         </motion.h1>
 
         <motion.p
@@ -36,7 +38,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          AI-Driven Developer
+          {t.heroSubtitle}
         </motion.p>
 
         <motion.p
@@ -45,7 +47,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          I build MVPs fast with AI-driven dev.
+          {t.heroBody}
         </motion.p>
 
         <motion.div
@@ -58,13 +60,13 @@ export function HeroSection() {
             href="#chat"
             className="inline-flex items-center gap-2 bg-white text-zinc-900 text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-zinc-100 transition-colors"
           >
-            Ask AI
+            {t.askAi}
           </a>
           <a
             href="mailto:ryoma.t.engineer@gmail.com"
             className="inline-flex items-center gap-2 bg-zinc-800 text-zinc-300 text-sm font-semibold px-5 py-2.5 rounded-full border border-zinc-700 hover:bg-zinc-700 transition-colors"
           >
-            Contact Me
+            {t.contactMe}
           </a>
           <a
             href="https://www.linkedin.com/in/ryoma-taguchi-b32024283"

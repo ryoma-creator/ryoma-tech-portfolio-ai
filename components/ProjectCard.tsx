@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCardMedia } from "@/components/ProjectCardMedia";
 import type { Project } from "@/types";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Props {
   project: Project;
@@ -12,6 +13,7 @@ interface Props {
 
 // プロジェクトカード（メディアは ProjectCardMedia）
 export function ProjectCard({ project, index }: Props) {
+  const { t } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -54,7 +56,7 @@ export function ProjectCard({ project, index }: Props) {
                 rel="noopener noreferrer"
                 className="rounded-full bg-zinc-700 px-3 py-1.5 text-xs text-zinc-200 transition-colors hover:bg-zinc-600"
               >
-                Live ↗
+                {t.live}
               </a>
             )}
             {project.githubUrl && (

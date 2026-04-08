@@ -7,6 +7,7 @@ import { ChatBubble } from "@/components/ChatMessage";
 import { ChatInput } from "@/components/ChatInput";
 import { useChatLimit } from "@/hooks/useChatLimit";
 import type { ChatMessage, ChatApiResponse, ChatApiError } from "@/types";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // チャットセクション（クライアントコンポーネント）
 export function ChatSection() {
@@ -14,6 +15,7 @@ export function ChatSection() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const { remaining, isLimited, increment } = useChatLimit();
+  const { t } = useLanguage();
   const bottomRef = useRef<HTMLDivElement>(null);
 
   // 新しいメッセージ追加時に自動スクロール
@@ -83,10 +85,12 @@ export function ChatSection() {
         {/* ヘッダー */}
         <div className="text-center mb-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-            Ask Me Anything
+            {t.askMeAnything}
           </h2>
           <p className="text-zinc-500 text-sm">
-            {remaining} question{remaining !== 1 ? "s" : ""} left today
+            {remaining === 1
+              ? t.questionsLeft1
+              : t.questionsLeftN.replace("{n}", String(remaining))}
           </p>
         </div>
 
@@ -100,7 +104,7 @@ export function ChatSection() {
                   animate={{ opacity: 1 }}
                   className="text-center text-zinc-600 text-sm mt-10"
                 >
-                  Curious about services, pricing, or my story? Ask away 👋
+                  {t.chatEmpty}
                 </motion.p>
               )}
               {messages.map((m) => (
@@ -139,12 +143,12 @@ export function ChatSection() {
           <div className="border-t border-zinc-800 p-4">
             {isLimited ? (
               <p className="text-center text-sm text-zinc-400 py-2">
-                You&apos;ve reached today&apos;s limit! Feel free to{" "}
+                {t.limitReached}{" "}
                 <a
                   href="mailto:ryoma.t.engineer@gmail.com"
                   className="text-zinc-300 underline underline-offset-2 hover:text-white"
                 >
-                  contact me directly
+                  {t.contactDirectly}
                 </a>
                 .
               </p>
