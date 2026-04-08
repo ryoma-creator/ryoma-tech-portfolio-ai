@@ -68,6 +68,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/da3abynbu/video/upload/f_mp4,vc_h264,q_auto/ai-portfolio_q8u8yi.mp4",
     imageUrl:
       "https://res.cloudinary.com/da3abynbu/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/ai-portfolio_q8u8yi.jpg",
+    autoplay: true,
     githubUrl: "https://github.com/ryoma-creator/ryoma-tech-portfolio-ai",
     builtAt: "2026-04",
   },
