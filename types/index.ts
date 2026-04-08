@@ -33,6 +33,8 @@ export interface Project {
   githubUrl?: string;
   /** 完成年月 "YYYY-MM" 形式 */
   builtAt?: string;
+  /** true のとき videoUrl を自動再生・ループ・ミュートで流す */
+  autoplay?: boolean;
 }
 
 // APIリクエスト・レスポンスの型

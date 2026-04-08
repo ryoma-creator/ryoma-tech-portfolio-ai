@@ -1,10 +1,19 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import type { Project } from "@/types";
 
 // カード上部のメディア（iframe 埋め込み → ネイティブ動画 → 画像 → プレースホルダー）
 export function ProjectCardMedia({ project }: { project: Project }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // autoplay 動画の再生速度を 1.1 倍に設定
+  useEffect(() => {
+    if (videoRef.current && project.autoplay) {
+      videoRef.current.playbackRate = 1.1;
+    }
+  }, [project.autoplay]);
   if (project.videoEmbedUrl) {
     return (
       <div className="relative aspect-video w-full bg-black">
@@ -21,6 +30,24 @@ export function ProjectCardMedia({ project }: { project: Project }) {
   }
 
   if (project.videoUrl) {
+    if (project.autoplay) {
+      return (
+        <div className="relative aspect-video w-full bg-black">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster={project.imageUrl}
+            className="h-full w-full object-cover"
+          >
+            <source src={project.videoUrl} type="video/mp4" />
+          </video>
+        </div>
+      );
+    }
     return (
       <div className="relative aspect-video w-full bg-black">
         <video

@@ -15,6 +15,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.mp4",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.jpg",
+    autoplay: true,
     liveUrl: "https://ai-intelligence-monitor.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ai-intelligence-monitor",
     builtAt: "2026-04",
