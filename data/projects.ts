@@ -11,8 +11,8 @@ export const projects: Project[] = [
       "Real-time AI industry news dashboard. Pulls from 5 RSS feeds and HackerNews, runs each article through gpt-4o-mini for an English or Japanese summary, importance score (1–10), and trend tags — all surfaced in a filterable feed.",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "RSS"],
-    videoEmbedUrl:
-      "https://player.cloudinary.com/embed/?cloud_name=dnm2fyhwt&public_id=Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b&loop=true&autoplay=true&muted=true",
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.mp4",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.jpg",
     liveUrl: "https://ai-intelligence-monitor.vercel.app/",
