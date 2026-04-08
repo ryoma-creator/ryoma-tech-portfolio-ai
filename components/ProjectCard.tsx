@@ -23,7 +23,14 @@ export function ProjectCard({ project, index }: Props) {
       <ProjectCardMedia project={project} />
 
       <div className="p-5">
-        <h3 className="mb-2 text-base font-semibold text-zinc-100">{project.title}</h3>
+        <div className="mb-2 flex items-center justify-between gap-2">
+          <h3 className="text-base font-semibold text-zinc-100">{project.title}</h3>
+          {project.builtAt && (
+            <span className="shrink-0 text-xs text-zinc-500">
+              {new Date(project.builtAt + "-01").toLocaleDateString("en-US", { year: "numeric", month: "short" })}
+            </span>
+          )}
+        </div>
         <p className="mb-3 text-sm leading-relaxed text-zinc-400">{project.description}</p>
 
         <div className="mb-4 flex flex-wrap gap-1.5">

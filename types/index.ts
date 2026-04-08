@@ -31,6 +31,8 @@ export interface Project {
   imageUrl?: string;
   liveUrl?: string;
   githubUrl?: string;
+  /** 完成年月 "YYYY-MM" 形式 */
+  builtAt?: string;
 }
 
 // APIリクエスト・レスポンスの型

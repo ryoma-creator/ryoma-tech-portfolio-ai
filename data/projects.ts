@@ -17,6 +17,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_6.26.33_PM_pvk91b.jpg",
     liveUrl: "https://ai-intelligence-monitor.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ai-intelligence-monitor",
+    builtAt: "2026-04",
   },
   {
     id: "ai-helpdesk",
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       "https://placehold.co/800x450/18181b/737373/png?text=AI+Internal+Helpdesk",
     liveUrl: "https://ai-internal-helpdesk-saas.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/ai-internal-helpdesk-saas",
+    builtAt: "2026-04",
   },
   {
     id: "creator-hook-score",
@@ -40,6 +42,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Creator+Hook+Score",
     liveUrl: "https://creator-hook-score.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/creator-hook-score",
+    builtAt: "2026-04",
   },
   {
     id: "shopping-list",
@@ -51,6 +54,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Shopping+List",
     liveUrl: "https://shopping-list-claude-code.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/shopping-list-claude-code",
+    builtAt: "2026-04",
   },
   {
     id: "portfolio-ai",
@@ -61,6 +65,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS", "Framer Motion"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=AI+Chat+Portfolio",
     githubUrl: "https://github.com/ryoma-creator/ryoma-tech-portfolio-ai",
+    builtAt: "2026-04",
   },
   {
     id: "support-ai-dashboard",
@@ -74,6 +79,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-04_at_12.30.03_PM_r0fvh8.jpg",
     liveUrl: "https://support-ai-dashboard.vercel.app/",
+    builtAt: "2026-04",
   },
 
   // ── Hand-Coded Projects ──────────────────────────────────────────
@@ -86,6 +92,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://my-portfolio-website-lake.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/portfolio-3",
+    builtAt: "2025-02",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/image/upload/v1733368949/portfoliowebsite_eiuwcq.png",
   },
@@ -99,6 +106,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
     liveUrl: "https://ecommerce-p66q.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ecommerce",
+    builtAt: "2025-02",
   },
   {
     id: "weather-app",
@@ -110,6 +118,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Weather+App",
     liveUrl: "https://weather-app-eight-amber-29.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/weather-app",
+    builtAt: "2025-02",
   },
   {
     id: "todo-app",
@@ -121,6 +130,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Todo+App",
     liveUrl: "https://todo-app-kappa-ochre.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/to-do-app-claude-code",
+    builtAt: "2025-02",
   },
   {
     id: "tech-vocab",
@@ -131,5 +141,6 @@ export const projects: Project[] = [
     tags: ["React", "Next.js", "JavaScript", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Tech+Vocabulary",
     githubUrl: "https://github.com/ryoma-creator/react-interview-ryoma-original",
+    builtAt: "2025-02",
   },
 ];
