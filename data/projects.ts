@@ -8,7 +8,7 @@ export const projects: Project[] = [
     id: "ai-intelligence-monitor",
     title: "AI Intelligence Monitor",
     description:
-      "Real-time AI industry news dashboard. Pulls from 5 RSS feeds and HackerNews, runs each article through gpt-4o-mini for an English or Japanese summary, importance score (1–10), and trend tags — all surfaced in a filterable feed.",
+      "A dashboard that automatically collects AI industry news and summarizes each article using AI. Pulls from 5 RSS feeds and Hacker News, then scores each article by importance and tags it with trends. Supports both English and Japanese.",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "RSS"],
     videoUrl:
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     id: "ai-helpdesk",
     title: "AI Internal Helpdesk SaaS",
     description:
-      "RAG-powered helpdesk. Upload PDFs, ask questions in plain English, get answers with source citations — grounded in your own data.",
+      "An internal Q&A tool for teams. Upload your company's PDF documents, ask questions in plain language, and get answers with source citations — powered by AI that only uses your own data.",
     category: "ai-assisted",
     tags: ["Next.js", "Supabase pgvector", "OpenAI GPT-4", "TypeScript", "RAG"],
     imageUrl:
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     id: "creator-hook-score",
     title: "Creator Hook Score",
     description:
-      "TikTok hook analyzer. Score your hook 0–100 across 8 criteria, get a grade (A–D), and receive 3 prioritized improvement tips instantly.",
+      "A tool for content creators to improve their video hooks. Paste your opening line and get an instant score out of 100, a letter grade, and 3 specific tips to make it more engaging.",
     category: "ai-assisted",
     tags: ["Next.js", "TypeScript", "Vitest", "Tailwind CSS"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Creator+Hook+Score",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     id: "shopping-list",
     title: "Shopping List App",
     description:
-      "Realtime synced shopping list with live updates across all devices simultaneously, powered by Supabase Realtime subscriptions.",
+      "A shopping list app that syncs instantly across all your devices. Add or check off items on your phone, and the changes appear on your laptop in real time — no refresh needed.",
     category: "ai-assisted",
     tags: ["Next.js", "Supabase Realtime", "TypeScript", "Tailwind CSS"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Shopping+List",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     id: "portfolio-ai",
     title: "AI Chat Portfolio (This Site)",
     description:
-      "This very portfolio — built with AI-assisted development. Features a rate-limited AI chat powered by OpenAI that knows Ryoma's full story.",
+      "This portfolio site itself. Built with AI-assisted development, it includes a live chat feature where you can ask an AI about Ryoma's background, skills, and projects and get real answers.",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS", "Framer Motion"],
     videoUrl:
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     id: "support-ai-dashboard",
     title: "Support AI Dashboard",
     description:
-      "Support ticket dashboard with a Next.js API route that calls OpenAI gpt-4o-mini to auto-triage tickets — classifying category, priority, sentiment, and generating a suggested customer reply.",
+      "A customer support dashboard where AI automatically reads incoming tickets and suggests how to handle them. It classifies the issue, rates the urgency, detects the customer's mood, and drafts a reply — all instantly.",
     category: "ai-assisted",
     tags: ["Next.js", "Node.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     videoEmbedUrl:
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     id: "portfolio-v1",
     title: "Portfolio Website v1",
     description:
-      "Personal portfolio with 5 major design iterations. Includes a server-side contact form with auto-reply email via API route. Built with Framer Motion animations and shadcn/ui components.",
+      "A personal portfolio site rebuilt 5 times as design skills grew. Features smooth animations throughout, and a contact form that automatically sends a reply email to anyone who reaches out.",
     category: "hand-coded",
     tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
     videoUrl:
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     id: "ecommerce",
     title: "E-Commerce Website",
     description:
-      "Full-featured e-commerce platform with product listings, cart functionality, and smooth UI transitions.",
+      "A fully functional online store built from scratch. Browse products, add them to your cart, and experience smooth page transitions — all the core features you'd expect from a real e-commerce site.",
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "Framer Motion", "JavaScript", "API"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     id: "weather-app",
     title: "Weather App",
     description:
-      "Real-time weather application. Search any city and get current conditions and forecasts via live API integration.",
+      "Search any city in the world and instantly see the current weather and forecast. Pulls live data from a weather API — simple, fast, and works anywhere.",
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "JavaScript", "Weather API"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Weather+App",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     id: "todo-app",
     title: "Todo List App",
     description:
-      "CRUD application with drag & drop reordering. Clean UI with full task management — add, edit, complete, delete, and reorder by dragging.",
+      "A clean task manager where you can add, edit, complete, and delete tasks. You can also reorder them by dragging — built to practice core app development fundamentals.",
     category: "hand-coded",
     tags: ["React", "JavaScript", "CSS", "Drag & Drop"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Todo+App",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     id: "tech-vocab",
     title: "Tech Vocabulary App",
     description:
-      "Self-built technical interview prep app covering JavaScript, React, Next.js, dev tools, and coding challenges — created to ace IBM's selection process.",
+      "A study app Ryoma built for himself to prepare for technical interviews. Covers JavaScript, React, and coding concepts — originally created to pass IBM's developer selection process.",
     category: "hand-coded",
     tags: ["React", "Next.js", "JavaScript", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Tech+Vocabulary",
