@@ -114,7 +114,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
     liveUrl: "https://ecommerce-p66q.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ecommerce",
-    builtAt: "2025-02",
+    builtAt: "2024-08",
   },
   {
     id: "weather-app",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Weather+App",
     liveUrl: "https://weather-app-eight-amber-29.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/weather-app",
-    builtAt: "2025-02",
+    builtAt: "2024-08",
   },
   {
     id: "todo-app",
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Todo+App",
     liveUrl: "https://todo-app-kappa-ochre.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/to-do-app-claude-code",
-    builtAt: "2025-02",
+    builtAt: "2024-07",
   },
   {
     id: "tech-vocab",
