@@ -149,6 +149,6 @@ export const projects: Project[] = [
     tags: ["React", "Next.js", "JavaScript", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Tech+Vocabulary",
     githubUrl: "https://github.com/ryoma-creator/react-interview-ryoma-original",
-    builtAt: "2025-02",
+    builtAt: "2024-06",
   },
 ];
