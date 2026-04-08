@@ -94,11 +94,14 @@ export const projects: Project[] = [
       "Personal portfolio with 5 major design iterations. Includes a server-side contact form with auto-reply email via API route. Built with Framer Motion animations and shadcn/ui components.",
     category: "hand-coded",
     tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.jpg",
+    autoplay: true,
     liveUrl: "https://my-portfolio-website-lake.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/portfolio-3",
     builtAt: "2025-02",
-    imageUrl:
-      "https://res.cloudinary.com/dnm2fyhwt/image/upload/v1733368949/portfoliowebsite_eiuwcq.png",
   },
   {
     id: "ecommerce",
