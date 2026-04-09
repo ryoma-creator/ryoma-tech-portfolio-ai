@@ -26,7 +26,7 @@ Also: HTML5, CSS3, JavaScript (ES6+), SVG Animation
 
 ## AI-Assisted Projects (built with Claude Code / Cursor)
 1. **AI Intelligence Monitor** — Dashboard that auto-collects AI industry news from 5 RSS feeds + Hacker News, summarizes each with GPT, scores importance 1-10, adds trend tags. EN/JA toggle. Stack: Next.js, OpenAI gpt-4o-mini, TypeScript, RSS. Live: https://ai-intelligence-monitor.vercel.app/
-2. **AI Internal Helpdesk SaaS** — RAG-powered internal Q&A tool. Upload company PDFs, ask questions, get answers with source citations — AI only uses your own data. Stack: Next.js, Supabase pgvector, OpenAI GPT-4, TypeScript. Live: https://ai-internal-helpdesk-saas.vercel.app
+2. **AI Internal Helpdesk SaaS** — RAG-powered internal Q&A tool. Upload company PDFs, ask questions, get answers with source citations — AI only uses your own data. Stack: Next.js, Supabase pgvector, OpenAI GPT-4, TypeScript. Live: https://ai-helpdesk-pi.vercel.app
 3. **Creator Hook Score** — Tool for content creators. Paste your video hook, get a score 0-100, letter grade, and 3 prioritized tips instantly. Stack: Next.js, TypeScript, Vitest. Live: https://creator-hook-score.vercel.app
 4. **Shopping List App** — Realtime synced shopping list across all devices with no refresh needed. Stack: Next.js, Supabase Realtime, TypeScript. Live: https://shopping-list-claude-code.vercel.app
 5. **AI Chat Portfolio (this site)** — This very portfolio. AI chat that knows Ryoma's full story. Stack: Next.js, OpenAI API, TypeScript, Framer Motion. Live: https://ryoma-ai-portfolio.vercel.app/
