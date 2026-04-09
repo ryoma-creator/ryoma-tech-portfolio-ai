@@ -24,20 +24,20 @@ AI: OpenAI API, RAG (pgvector)
 Mobile: React Native (Expo)
 Also: HTML5, CSS3, JavaScript (ES6+), SVG Animation
 
-## AI-Assisted Projects (recent)
-1. **AI Internal Helpdesk SaaS** — RAG-powered helpdesk. Upload PDFs, ask questions, get answers with citations. Stack: Next.js + Supabase pgvector + OpenAI GPT-4. Live: https://ai-internal-helpdesk-saas.vercel.app
-2. **Creator Hook Score** — TikTok hook analyzer. Score your hook 0-100, get instant tips. Stack: Next.js, TypeScript, Vitest. Live: https://creator-hook-score.vercel.app
-3. **Shopping List App** — Realtime synced list across devices. Stack: Next.js, Supabase Realtime. Live: https://shopping-list-claude-code.vercel.app
-4. **This Portfolio** — AI chat demo with rate limiting. Stack: Next.js, OpenAI, Tailwind.
-5. **Support AI Dashboard** — Support operations dashboard with AI-assisted workflows. Stack: Next.js, TypeScript, Tailwind.
+## AI-Assisted Projects (built with Claude Code / Cursor)
+1. **AI Intelligence Monitor** — Dashboard that auto-collects AI industry news from 5 RSS feeds + Hacker News, summarizes each with GPT, scores importance 1-10, adds trend tags. EN/JA toggle. Stack: Next.js, OpenAI gpt-4o-mini, TypeScript, RSS. Live: https://ai-intelligence-monitor.vercel.app/
+2. **AI Internal Helpdesk SaaS** — RAG-powered internal Q&A tool. Upload company PDFs, ask questions, get answers with source citations — AI only uses your own data. Stack: Next.js, Supabase pgvector, OpenAI GPT-4, TypeScript. Live: https://ai-internal-helpdesk-saas.vercel.app
+3. **Creator Hook Score** — Tool for content creators. Paste your video hook, get a score 0-100, letter grade, and 3 prioritized tips instantly. Stack: Next.js, TypeScript, Vitest. Live: https://creator-hook-score.vercel.app
+4. **Shopping List App** — Realtime synced shopping list across all devices with no refresh needed. Stack: Next.js, Supabase Realtime, TypeScript. Live: https://shopping-list-claude-code.vercel.app
+5. **AI Chat Portfolio (this site)** — This very portfolio. AI chat that knows Ryoma's full story. Stack: Next.js, OpenAI API, TypeScript, Framer Motion. Live: https://ryoma-ai-portfolio.vercel.app/
+6. **Support AI Dashboard** — Customer support dashboard where AI auto-reads tickets, classifies issue, rates urgency, detects sentiment, and drafts a reply. Stack: Next.js, Node.js, OpenAI gpt-4o-mini, TypeScript, shadcn/ui. Live: https://support-ai-dashboard.vercel.app/
 
 ## Hand-Coded Projects (proof of fundamentals)
-6. **Interactive Storytelling Portfolio** — Advanced scroll-based animations with GSAP + Framer Motion. Stack: Next.js, GSAP, Framer Motion.
-7. **E-Commerce Website** — Full-featured EC site with cart functionality. Stack: React, Tailwind, Framer Motion.
-8. **Weather App** — Real-time weather with live API integration. Stack: React, Tailwind, JavaScript.
-9. **Todo List App** — CRUD with drag & drop reordering. Stack: React, JavaScript, CSS.
-10. **Tech Vocabulary App** — Self-built interview prep app covering JS/React/Next.js/coding challenges. Stack: React, Next.js. GitHub: https://github.com/ryoma-creator/react-interview-ryoma-original
-11. **Portfolio v1** — Previous portfolio with 5 major design iterations. Live: https://my-portfolio-website-lake.vercel.app
+7. **Portfolio Website v1** — Personal portfolio rebuilt 5 times as design skills grew. Auto-reply contact form (server-side). Stack: Next.js, Node.js, Framer Motion, shadcn/ui. Live: https://my-portfolio-website-lake.vercel.app/
+8. **E-Commerce Website** — Fully functional online store with product listings, cart, and smooth UI transitions. Stack: React, Tailwind CSS, Framer Motion. Live: https://ecommerce-p66q.vercel.app/
+9. **Weather App** — Search any city, get live weather and forecast instantly. Stack: React, Tailwind CSS, JavaScript, Weather API. Live: https://weather-app-eight-amber-29.vercel.app
+10. **Todo List App** — Task manager with add/edit/complete/delete + drag & drop reordering. Stack: React, JavaScript, CSS. Live: https://todo-app-kappa-ochre.vercel.app/
+11. **Tech Vocabulary App** — Self-built interview prep app covering JS/React/Next.js — created to pass IBM's developer selection process. Stack: React, Next.js, TypeScript. GitHub: https://github.com/ryoma-creator/react-interview-ryoma-original
 
 ## Career & Background
 - **Accenture Japan → Philippines** (Feb 2022 – Feb 2024): International HR system migration (Japan/China/Philippines trilingual team). Led subteam of 5. Shortened onboarding from 3 months → 1 month. Established Philippines office operations.
