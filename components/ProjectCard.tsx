@@ -13,7 +13,7 @@ interface Props {
 
 // プロジェクトカード（メディアは ProjectCardMedia）
 export function ProjectCard({ project, index }: Props) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,9 @@ export function ProjectCard({ project, index }: Props) {
             </span>
           )}
         </div>
-        <p className="mb-3 text-sm leading-relaxed text-zinc-400">{project.description}</p>
+        <p className="mb-3 text-sm leading-relaxed text-zinc-400">
+          {locale === 'ja' && project.descriptionJa ? project.descriptionJa : project.description}
+        </p>
 
         <div className="mb-4 flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (

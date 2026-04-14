@@ -21,6 +21,7 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  descriptionJa?: string;
   category: ProjectCategory;
   tags: string[];
   /** Cloudinary Video Player 等の iframe（カードでは最優先） */

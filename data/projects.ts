@@ -9,6 +9,8 @@ export const projects: Project[] = [
     title: "AI Intelligence Monitor",
     description:
       "A dashboard that automatically collects AI industry news and summarizes each article using AI. Pulls from 5 RSS feeds and Hacker News, then scores each article by importance and tags it with trends. Supports both English and Japanese.",
+    descriptionJa:
+      "AI業界のニュースを5つのRSSフィードとHacker Newsから自動収集し、GPTで要約・重要度スコアリング・トレンドタグ付けをするダッシュボード。日英切り替え対応。",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "RSS"],
     videoUrl:
@@ -25,6 +27,8 @@ export const projects: Project[] = [
     title: "AI Internal Helpdesk SaaS",
     description:
       "An internal Q&A tool for teams. Upload your company's PDF documents, ask questions in plain language, and get answers with source citations — powered by AI that only uses your own data.",
+    descriptionJa:
+      "チーム向け社内Q&Aツール。会社のPDFをアップロードして自然言語で質問すると、出典付きで回答。AIは自社データのみを参照するRAG構成。",
     category: "ai-assisted",
     tags: ["Next.js", "Supabase pgvector", "OpenAI GPT-4", "TypeScript", "RAG"],
     imageUrl:
@@ -38,6 +42,8 @@ export const projects: Project[] = [
     title: "Creator Hook Score",
     description:
       "A tool for content creators to improve their video hooks. Paste your opening line and get an instant score out of 100, a letter grade, and 3 specific tips to make it more engaging.",
+    descriptionJa:
+      "コンテンツクリエイター向けのフック改善ツール。動画の冒頭の一文を貼り付けると、100点満点のスコア・レターグレード・具体的な改善ヒント3つを即座に表示。",
     category: "ai-assisted",
     tags: ["Next.js", "TypeScript", "Vitest", "Tailwind CSS"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Creator+Hook+Score",
@@ -50,6 +56,8 @@ export const projects: Project[] = [
     title: "Startup Hunter — VC Job Matcher",
     description:
       "A job-hunting tool built because Ryoma doesn't trust generic job boards. Scrapes 450+ VC-backed startups from Global Brain and Y Combinator, finds live job pages, and uses AI to score each role against a personal profile — all within a $1 cost cap.",
+    descriptionJa:
+      "一般的な求人ボードを信用しないRyomaが自分のために作った求人ツール。Global BrainとY Combinatorから450社以上をスクレイピングし、AIで各求人を個人プロフィールとマッチング。コスト上限$1以内で動作。",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "Web Scraping"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Startup+Hunter",
@@ -61,6 +69,8 @@ export const projects: Project[] = [
     title: "Shopping List App — AI-Enhanced PWA",
     description:
       "A production-grade offline-first PWA. Point your camera at groceries and AI auto-detects items instantly. Syncs in real time across all devices, works without WiFi and auto-syncs when back online. Supports multiple users with auth and Cloudinary image matching.",
+    descriptionJa:
+      "本番品質のオフラインファーストPWA。カメラを向けるだけでAIが食材を自動検出。全デバイスでリアルタイム同期、WiFiなしでも動作してオンライン復帰時に自動同期。認証・マルチユーザー・Cloudinary画像マッチング対応。",
     category: "ai-assisted",
     tags: ["Next.js", "Claude API", "Supabase Realtime", "PWA", "Cloudinary", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Shopping+List+AI",
@@ -73,6 +83,8 @@ export const projects: Project[] = [
     title: "AI Chat Portfolio (This Site)",
     description:
       "This portfolio site itself. Built with AI-assisted development, it includes a live chat feature where you can ask an AI about Ryoma's background, skills, and projects and get real answers.",
+    descriptionJa:
+      "このポートフォリオサイト自体。AI活用開発で構築。AIチャット機能でRyomaの経歴・スキル・プロジェクトについてリアルタイムで質問できる。",
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS", "Framer Motion"],
     videoUrl:
@@ -88,6 +100,8 @@ export const projects: Project[] = [
     title: "Support AI Dashboard",
     description:
       "A customer support dashboard where AI automatically reads incoming tickets and suggests how to handle them. It classifies the issue, rates the urgency, detects the customer's mood, and drafts a reply — all instantly.",
+    descriptionJa:
+      "カスタマーサポートダッシュボード。AIが受信チケットを自動読み取りし、問題分類・緊急度評価・感情検知・返信ドラフトを即座に生成。",
     category: "ai-assisted",
     tags: ["Next.js", "Node.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     videoEmbedUrl:
@@ -104,6 +118,8 @@ export const projects: Project[] = [
     title: "Portfolio Website v1",
     description:
       "A personal portfolio site rebuilt 5 times as design skills grew. Features smooth animations throughout, and a contact form that automatically sends a reply email to anyone who reaches out.",
+    descriptionJa:
+      "スキル向上とともに5回作り直したポートフォリオサイト。全体にスムーズなアニメーションを実装し、問い合わせフォームから自動返信メールを送信する機能付き。",
     category: "hand-coded",
     tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
     videoUrl:
