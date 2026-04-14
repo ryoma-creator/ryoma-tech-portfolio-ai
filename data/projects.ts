@@ -5,6 +5,19 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   // ── AI-Assisted Projects ─────────────────────────────────────────
   {
+    id: "iot-fleet-monitor",
+    title: "IoT Fleet Monitor",
+    description:
+      "A real-time IoT device monitoring dashboard built as a demo for a MVNO SIM company interview. Displays 6 simulated SIM-equipped devices with live signal strength and battery gauges. Receives device events via Webhook, updates status in real time through Supabase Realtime, and runs AI anomaly detection on demand.",
+    descriptionJa:
+      "MVNO SIM会社の面接用デモとして1日で構築したIoTデバイス監視ダッシュボード。SIM搭載デバイス6台の電波強度・バッテリーをリアルタイム表示。Webhookでイベント受信→Supabase Realtimeで即時更新→AIが異常検知・推奨アクションを生成。",
+    category: "ai-assisted",
+    tags: ["Next.js", "Supabase Realtime", "OpenAI gpt-4o-mini", "TypeScript", "Webhook", "IoT"],
+    imageUrl: "https://placehold.co/800x450/050d1a/38bdf8/png?text=IoT+Fleet+Monitor",
+    githubUrl: "https://github.com/ryoma-creator/iot-monitor",
+    builtAt: "2026-04",
+  },
+  {
     id: "ai-intelligence-monitor",
     title: "AI Intelligence Monitor",
     description:
