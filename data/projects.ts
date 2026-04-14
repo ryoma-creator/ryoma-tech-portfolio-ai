@@ -14,6 +14,7 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Next.js", "Supabase Realtime", "OpenAI gpt-4o-mini", "TypeScript", "Webhook", "IoT"],
     imageUrl: "https://placehold.co/800x450/050d1a/38bdf8/png?text=IoT+Fleet+Monitor",
+    liveUrl: "https://iot-monitor-brown.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/iot-monitor",
     builtAt: "2026-04",
   },
