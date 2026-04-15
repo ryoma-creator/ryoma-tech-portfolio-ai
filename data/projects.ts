@@ -164,6 +164,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-15_at_10.08.37_AM_zkownw.mp4",
     imageUrl:
       "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-15_at_10.08.37_AM_zkownw.jpg",
+    autoplay: true,
     liveUrl: "https://ecommerce-p66q.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ecommerce",
     builtAt: "2024-08",
