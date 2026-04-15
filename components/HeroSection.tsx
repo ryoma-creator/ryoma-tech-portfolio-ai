@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { VisitorCounter } from "@/components/VisitorCounter";
 
 // ヒーローセクション（名前・CTA）
 export function HeroSection() {
@@ -13,15 +14,18 @@ export function HeroSection() {
       </div>
 
       <div className="flex flex-col items-center md:items-start gap-5 max-w-2xl">
-        <motion.span
-          className="inline-flex items-center gap-2 bg-zinc-800/80 border border-zinc-700/50 text-zinc-300 text-xs px-4 py-1.5 rounded-full backdrop-blur-sm"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-          {t.available}
-        </motion.span>
+        <div className="flex items-center gap-3">
+          <motion.span
+            className="inline-flex items-center gap-2 bg-zinc-800/80 border border-zinc-700/50 text-zinc-300 text-xs px-4 py-1.5 rounded-full backdrop-blur-sm"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+            {t.available}
+          </motion.span>
+          <VisitorCounter />
+        </div>
 
         <motion.h1
           className="text-5xl sm:text-6xl font-bold tracking-tight text-white"

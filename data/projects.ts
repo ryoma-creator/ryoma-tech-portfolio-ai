@@ -79,6 +79,7 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Next.js", "OpenAI gpt-4o-mini", "TypeScript", "Tailwind CSS", "Web Scraping"],
     imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Startup+Hunter",
+    liveUrl: "https://startup-hunter-kappa.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/startup-hunter",
     builtAt: "2026-04",
   },
