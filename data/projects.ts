@@ -160,7 +160,11 @@ export const projects: Project[] = [
       "A fully functional online store built from scratch. Browse products, add them to your cart, and experience smooth page transitions — all the core features you'd expect from a real e-commerce site.",
     category: "hand-coded",
     tags: ["React", "Tailwind CSS", "Framer Motion", "JavaScript", "API"],
-    imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=E-Commerce",
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-15_at_10.08.37_AM_zkownw.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-15_at_10.08.37_AM_zkownw.jpg",
+    autoplay: true,
     liveUrl: "https://ecommerce-p66q.vercel.app/",
     githubUrl: "https://github.com/ryoma-creator/ecommerce",
     builtAt: "2024-08",
