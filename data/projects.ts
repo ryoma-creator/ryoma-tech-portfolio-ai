@@ -91,7 +91,11 @@ export const projects: Project[] = [
       "本番品質のオフラインファーストPWA。カメラを向けるだけでAIが食材を自動検出。全デバイスでリアルタイム同期、WiFiなしでも動作してオンライン復帰時に自動同期。認証・マルチユーザー・Cloudinary画像マッチング対応。",
     category: "ai-assisted",
     tags: ["Next.js", "Claude API", "Supabase Realtime", "PWA", "Cloudinary", "TypeScript"],
-    imageUrl: "https://placehold.co/800x450/18181b/737373/png?text=Shopping+List+AI",
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-15_at_10.02.37_AM_loqoc7.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-15_at_10.02.37_AM_loqoc7.jpg",
+    autoplay: true,
     liveUrl: "https://shopping-list-claude-code.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/shopping-list-claude-code",
     builtAt: "2026-04",
