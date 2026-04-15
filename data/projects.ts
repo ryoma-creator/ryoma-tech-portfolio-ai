@@ -13,7 +13,11 @@ export const projects: Project[] = [
       "MVNO SIM会社の面接用デモとして1日で構築したIoTデバイス監視ダッシュボード。SIM搭載デバイス6台の電波強度・バッテリーをリアルタイム表示。Webhookでイベント受信→Supabase Realtimeで即時更新→AIが異常検知・推奨アクションを生成。",
     category: "ai-assisted",
     tags: ["Next.js", "Supabase Realtime", "OpenAI gpt-4o-mini", "TypeScript", "Webhook", "IoT"],
-    imageUrl: "https://placehold.co/800x450/050d1a/38bdf8/png?text=IoT+Fleet+Monitor",
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-15_at_9.57.28_AM_pxb6vh.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-15_at_9.57.28_AM_pxb6vh.jpg",
+    autoplay: true,
     liveUrl: "https://iot-monitor-brown.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/iot-monitor",
     builtAt: "2026-04",
