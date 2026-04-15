@@ -30,6 +30,22 @@ export function ProjectCardMedia({ project }: { project: Project }) {
   }
 
   if (project.videoUrl) {
+    // 縦型（スマホ録画）: 黒背景+センタリングで表示
+    if (project.portrait) {
+      return (
+        <div className="relative w-full bg-zinc-950 flex items-center justify-center" style={{ height: '320px' }}>
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={project.imageUrl}
+            className="h-full w-auto max-w-full"
+          >
+            <source src={project.videoUrl} type="video/mp4" />
+          </video>
+        </div>
+      );
+    }
     if (project.autoplay) {
       return (
         <div className="relative aspect-video w-full bg-black">

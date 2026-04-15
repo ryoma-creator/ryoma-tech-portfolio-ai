@@ -36,6 +36,8 @@ export interface Project {
   builtAt?: string;
   /** true のとき videoUrl を自動再生・ループ・ミュートで流す */
   autoplay?: boolean;
+  /** true のとき縦型（スマホ録画）として表示 */
+  portrait?: boolean;
 }
 
 // APIリクエスト・レスポンスの型
