@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main className="w-full max-w-5xl mx-auto px-4 sm:px-6">
       <HeroSection />
-      <AchievementsSection />
       <IntroVideoSection />
       <ChatSection />
       <ProjectsSection />
+      <AchievementsSection />
     </main>
   );
 }
