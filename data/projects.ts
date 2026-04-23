@@ -135,6 +135,21 @@ export const projects: Project[] = [
     builtAt: "2026-04",
   },
 
+  {
+    id: "condition-tracker",
+    title: "Condition Tracker",
+    description:
+      "A personal health tracker built for daily self-monitoring. Logs sleep timing, quality, fatigue, focus, exercise, meals, and supplements — then uses AI to detect patterns and dangerous trends from the past 30 days. Includes a Pro subscription tier via Stripe.",
+    descriptionJa:
+      "毎日のコンディション管理アプリ。就寝・起床時間、疲労度・集中度・運動・食事・サプリを記録し、過去30日のデータからAIが危険な傾向やパターンを検出。Stripeによるサブスクリプション（Pro機能）付き。",
+    category: "ai-assisted",
+    tags: ["Expo / React Native", "Supabase", "OpenAI gpt-4o-mini", "Stripe", "TypeScript"],
+    imageUrl: "https://placehold.co/800x450/0f0f0f/6366f1/png?text=Condition+Tracker",
+    liveUrl: "https://condition-tracker-web.vercel.app",
+    githubUrl: "https://github.com/ryoma-creator/condition-tracker",
+    builtAt: "2026-04",
+  },
+
   // ── Hand-Coded Projects ──────────────────────────────────────────
   {
     id: "portfolio-v1",
