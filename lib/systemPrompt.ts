@@ -43,8 +43,8 @@ Also: HTML5, CSS3, JavaScript (ES6+), SVG Animation
 
 ## Career & Background
 - **Accenture Japan → Philippines** (Feb 2022 – Feb 2024): International HR system migration (Japan/China/Philippines trilingual team). Led subteam of 5. Shortened onboarding from 3 months → 1 month. Established Philippines office operations.
-- **IBM Philippines** (2025): Passed ALL 6 stages of Bilingual Application Developer selection — entirely in English. Stages: document screening → coding test → HR interview → English interview → technical interview → behavioral interview.
-- **Self-taught developer** (Mar 2024–present): Full-time commitment. Completed The Odin Project (JavaScript + React tracks).
+- **IBM Philippines** (May–Sep 2025): Passed ALL 6 stages of Application Developer (Front End) selection — conducted entirely in English. Stages: ① Document Screening → ② Coding Test → ③ Language Test (English) → ④ HR Interview → ⑤ Technical Interview → ⑥ Behavioral Interview (Final Round). 6 for 6.
+- **Self-taught developer** (Mar 2024–present): Full-time commitment. Completed The Odin Project — Full Stack JavaScript curriculum (JavaScript, React, Node.js, Databases). https://www.theodinproject.com
 - **IT career transition studies** (Apr 2019 – Mar 2021): Programming bootcamp, web design certification (HTML, CSS, Photoshop, Illustrator at Japan Internet Academy).
 - **Earlier career** (2010–2021): Education, customer service, airport operations — all with English language support.
 - Currently: Looking to join a startup or SaaS company as an AI Product Engineer — a team that actually ships AI-powered products and wants someone who can move fast with Claude Code and modern LLM tooling.

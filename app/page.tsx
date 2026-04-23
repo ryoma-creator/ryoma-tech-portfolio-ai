@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { AchievementsSection } from "@/components/AchievementsSection";
 import { IntroVideoSection } from "@/components/IntroVideoSection";
 import { ChatSection } from "@/components/ChatSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <main className="w-full max-w-5xl mx-auto px-4 sm:px-6">
       <HeroSection />
+      <AchievementsSection />
       <IntroVideoSection />
       <ChatSection />
       <ProjectsSection />
