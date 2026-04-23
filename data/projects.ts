@@ -145,7 +145,6 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Expo / React Native", "Supabase", "OpenAI gpt-4o-mini", "Stripe", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/0f0f0f/6366f1/png?text=Condition+Tracker",
-    liveUrl: "https://condition-tracker-web.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/condition-tracker",
     builtAt: "2026-04",
   },
