@@ -161,6 +161,7 @@ export const projects: Project[] = [
     category: "lp-demo",
     tags: ["Next.js", "Framer Motion", "GSAP", "TypeScript", "Tailwind CSS", "Claude Code"],
     imageUrl: "https://res.cloudinary.com/da3abynbu/image/upload/w_800,h_450,c_fill,g_north,q_auto,f_jpg/v1778379546/NextGrow-DX_full_lp_qixf8i.png",
+    liveUrl: "https://enterprise-dx-platform-lp.vercel.app",
     builtAt: "2026-05",
   },
 
