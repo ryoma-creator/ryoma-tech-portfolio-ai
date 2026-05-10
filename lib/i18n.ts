@@ -40,6 +40,7 @@ export interface I18nStrings {
   projectsSubtitle: string;
   aiAssisted: string;
   handCoded: string;
+  lpDemo: string;
   projectsCount: string; // {n} を数字に置換
   // ProjectCard
   live: string;
@@ -69,6 +70,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "Real apps. Shipped. Live.",
     aiAssisted: "AI-Assisted",
     handCoded: "Hand-Coded",
+    lpDemo: "LP & Client Work",
     projectsCount: "{n} projects",
     live: "Live ↗",
   },
@@ -95,6 +97,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "実際のアプリ。リリース済み。稼働中。",
     aiAssisted: "AI活用制作",
     handCoded: "手動コーディング",
+    lpDemo: "LP・受託制作",
     projectsCount: "{n}件",
     live: "ライブ ↗",
   },
@@ -121,6 +124,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "Echte Apps. Veröffentlicht. Live.",
     aiAssisted: "KI-gestützt",
     handCoded: "Handcodiert",
+    lpDemo: "LP & Kundenarbeit",
     projectsCount: "{n} Projekte",
     live: "Live ↗",
   },
@@ -147,6 +151,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "Apps reales. Lanzadas. En vivo.",
     aiAssisted: "Con IA",
     handCoded: "Código manual",
+    lpDemo: "LP y trabajos cliente",
     projectsCount: "{n} proyectos",
     live: "En vivo ↗",
   },
@@ -173,6 +178,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "De vraies apps. Livrées. En ligne.",
     aiAssisted: "Assisté par IA",
     handCoded: "Codé à la main",
+    lpDemo: "LP & Travaux clients",
     projectsCount: "{n} projets",
     live: "En ligne ↗",
   },
@@ -199,6 +205,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "Rigtige apps. Leveret. Live.",
     aiAssisted: "AI-assisteret",
     handCoded: "Håndkodet",
+    lpDemo: "LP & Klientarbejde",
     projectsCount: "{n} projekter",
     live: "Live ↗",
   },
@@ -225,6 +232,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "App reali. Pubblicate. Live.",
     aiAssisted: "Assistito da IA",
     handCoded: "Codice manuale",
+    lpDemo: "LP & Lavori clienti",
     projectsCount: "{n} progetti",
     live: "Live ↗",
   },
@@ -251,6 +259,7 @@ export const translations: Record<Locale, I18nStrings> = {
     projectsSubtitle: "실제 앱. 출시됨. 운영 중.",
     aiAssisted: "AI 활용",
     handCoded: "직접 코딩",
+    lpDemo: "LP & 클라이언트 작업",
     projectsCount: "{n}개 프로젝트",
     live: "라이브 ↗",
   },

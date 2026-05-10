@@ -145,8 +145,23 @@ export const projects: Project[] = [
     category: "ai-assisted",
     tags: ["Expo / React Native", "Supabase", "OpenAI gpt-4o-mini", "Stripe", "TypeScript"],
     imageUrl: "https://placehold.co/800x450/0f0f0f/6366f1/png?text=Condition+Tracker",
+    liveUrl: "https://condition-tracker-nine.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/condition-tracker",
     builtAt: "2026-04",
+  },
+
+  // ── LP & Client Work ────────────────────────────────────────────
+  {
+    id: "enterprise-dx-lp",
+    title: "Enterprise DX Platform — Corporate LP",
+    description:
+      "A corporate DX consulting landing page shipped in under 2 hours using Claude Code and GPT. The differentiator: the AI was seeded with Ryoma's own hand-built animation library and component system — so the output isn't generic AI. It's his two years of frontend craft, running at AI speed. A live demo of what's possible for LP and corporate site clients.",
+    descriptionJa:
+      "Claude CodeとGPTを使い2時間以内に完成させた企業DXコンサルLPのデモ。重要なのは、AIにRyomaが自作したアニメーションライブラリとコンポーネントを読み込ませた点。出力は汎用的なAI生成ではなく、2年間かけて積み上げたフロントエンドのクラフトが土台。LP・コーポレートサイトの制作依頼デモとして制作。",
+    category: "lp-demo",
+    tags: ["Next.js", "Framer Motion", "GSAP", "TypeScript", "Tailwind CSS", "Claude Code"],
+    imageUrl: "https://res.cloudinary.com/da3abynbu/image/upload/w_800,h_450,c_fill,g_north,q_auto,f_jpg/v1778379546/NextGrow-DX_full_lp_qixf8i.png",
+    builtAt: "2026-05",
   },
 
   // ── Hand-Coded Projects ──────────────────────────────────────────

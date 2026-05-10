@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 // プロジェクト一覧セクション
 export function ProjectsSection() {
   const { t } = useLanguage();
+  const lpDemoProjects = projects.filter((p) => p.category === "lp-demo");
   const aiProjects = projects.filter((p) => p.category === "ai-assisted");
   const handCodedProjects = projects.filter((p) => p.category === "hand-coded");
 
@@ -24,6 +25,30 @@ export function ProjectsSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">{t.projects}</h2>
         <p className="text-zinc-500 text-sm">{t.projectsSubtitle}</p>
       </motion.div>
+
+      {/* LP・受託制作 */}
+      {lpDemoProjects.length > 0 && (
+        <div className="mb-10">
+          <motion.div
+            className="flex items-center gap-3 mb-5"
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+          >
+            <span className="text-xs font-semibold text-zinc-400 uppercase tracking-widest">
+              {t.lpDemo}
+            </span>
+            <div className="flex-1 h-px bg-zinc-800" />
+            <span className="text-xs text-zinc-600">{t.projectsCount.replace("{n}", String(lpDemoProjects.length))}</span>
+          </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {lpDemoProjects.map((project, i) => (
+              <ProjectCard key={project.id} project={project} index={i} />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* AIアシスト制作 */}
       {aiProjects.length > 0 && (
