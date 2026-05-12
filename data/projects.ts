@@ -152,6 +152,21 @@ export const projects: Project[] = [
 
   // ── LP & Client Work ────────────────────────────────────────────
   {
+    id: "beauty-salon-lp",
+    title: "Beauty Salon LP — &.LUMI hair salon",
+    description:
+      "A premium beauty salon landing page for a fictional Omotesando salon. Designed to match the editorial aesthetic of high-end Aoyama and Korean-style salons — airy, soft luxury, quiet elegance. Built with Framer Motion entrance animations, GSAP hero text, Cormorant Garamond typography, and full Cloudinary image delivery. Every section from hero to footer was crafted for maximum luxury feel.",
+    descriptionJa:
+      "表参道の架空高級サロン「&.LUMI hair salon」向けに制作したLPデモ。青山・韓国系サロンのエアリー×ソフトラグジュアリーを意識したデザイン。Framer Motionアニメーション、GSAPヒーローテキスト、Cormorant Garamondタイポグラフィ、Cloudinary画像配信を使用。ヒーローからフッターまで全セクションを高級感優先で設計。",
+    category: "lp-demo",
+    tags: ["Next.js", "Framer Motion", "GSAP", "TypeScript", "Cloudinary", "Claude Code"],
+    imageUrl:
+      "https://res.cloudinary.com/da3abynbu/image/upload/w_800,h_450,c_fill,g_north,q_auto,f_jpg/v1778561613/beauty-salon-no-words_aexysh.png",
+    liveUrl: "https://beauty-salon-lp-chi.vercel.app",
+    githubUrl: "https://github.com/ryoma-creator/beauty-salon-landingpage2",
+    builtAt: "2026-05",
+  },
+  {
     id: "enterprise-dx-lp",
     title: "Enterprise DX Platform — Corporate LP",
     description:
