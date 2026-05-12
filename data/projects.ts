@@ -161,7 +161,7 @@ export const projects: Project[] = [
     category: "lp-demo",
     tags: ["Next.js", "Framer Motion", "GSAP", "TypeScript", "Cloudinary", "Claude Code"],
     imageUrl:
-      "https://res.cloudinary.com/da3abynbu/image/upload/w_800,h_450,c_fill,g_north,q_auto,f_jpg/v1778561613/beauty-salon-no-words_aexysh.png",
+      "https://res.cloudinary.com/da3abynbu/image/upload/w_800,h_450,c_fill,g_north,q_auto,f_jpg/v1778561501/beauty-salon-hero._rq37fa.png",
     liveUrl: "https://beauty-salon-lp-chi.vercel.app",
     githubUrl: "https://github.com/ryoma-creator/beauty-salon-landingpage2",
     builtAt: "2026-05",
