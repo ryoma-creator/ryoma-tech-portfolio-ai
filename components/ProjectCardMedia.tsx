@@ -91,7 +91,6 @@ export function ProjectCardMedia({ project }: { project: Project }) {
           className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900/80" />
       </div>
     );
   }

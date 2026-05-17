@@ -14,8 +14,7 @@ export const projects: Project[] = [
       "今後運営予定のYouTubeチャンネル「True Crime Asia」向けの社内コンテンツ管理システム。案件の調査から公開まで一元管理。Notionライクな全セルインライン編集、日英切替、興味度スコア、US/UK/AUの高単価市場向け訴求スコアを実装。Next.js 16 App Router + SQLite + Server Actionsで構成。外部API不要。",
     category: "in-development",
     tags: ["Next.js 16", "SQLite", "Server Actions", "TypeScript", "Tailwind CSS", "i18n", "Content Ops"],
-    imageUrl:
-      "https://placehold.co/800x450/0a0005/7A000E/png?text=True+Crime+Asia+Database",
+    imageUrl: "/true-crime-asia-preview.png",
     liveUrl: "https://true-crime-asia-database.vercel.app",
     builtAt: "2026-05",
   },
