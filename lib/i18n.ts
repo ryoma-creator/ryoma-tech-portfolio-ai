@@ -41,6 +41,7 @@ export interface I18nStrings {
   aiAssisted: string;
   handCoded: string;
   lpDemo: string;
+  inDevelopment: string;
   projectsCount: string; // {n} を数字に置換
   // ProjectCard
   live: string;
@@ -71,6 +72,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "AI-Assisted",
     handCoded: "Hand-Coded",
     lpDemo: "LP & Client Work",
+    inDevelopment: "In Development",
     projectsCount: "{n} projects",
     live: "Live ↗",
   },
@@ -98,6 +100,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "AI活用制作",
     handCoded: "手動コーディング",
     lpDemo: "LP・受託制作",
+    inDevelopment: "開発中",
     projectsCount: "{n}件",
     live: "ライブ ↗",
   },
@@ -125,6 +128,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "KI-gestützt",
     handCoded: "Handcodiert",
     lpDemo: "LP & Kundenarbeit",
+    inDevelopment: "In Entwicklung",
     projectsCount: "{n} Projekte",
     live: "Live ↗",
   },
@@ -152,6 +156,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "Con IA",
     handCoded: "Código manual",
     lpDemo: "LP y trabajos cliente",
+    inDevelopment: "En desarrollo",
     projectsCount: "{n} proyectos",
     live: "En vivo ↗",
   },
@@ -179,6 +184,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "Assisté par IA",
     handCoded: "Codé à la main",
     lpDemo: "LP & Travaux clients",
+    inDevelopment: "En développement",
     projectsCount: "{n} projets",
     live: "En ligne ↗",
   },
@@ -206,6 +212,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "AI-assisteret",
     handCoded: "Håndkodet",
     lpDemo: "LP & Klientarbejde",
+    inDevelopment: "Under udvikling",
     projectsCount: "{n} projekter",
     live: "Live ↗",
   },
@@ -233,6 +240,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "Assistito da IA",
     handCoded: "Codice manuale",
     lpDemo: "LP & Lavori clienti",
+    inDevelopment: "In sviluppo",
     projectsCount: "{n} progetti",
     live: "Live ↗",
   },
@@ -260,6 +268,7 @@ export const translations: Record<Locale, I18nStrings> = {
     aiAssisted: "AI 활용",
     handCoded: "직접 코딩",
     lpDemo: "LP & 클라이언트 작업",
+    inDevelopment: "개발 중",
     projectsCount: "{n}개 프로젝트",
     live: "라이브 ↗",
   },

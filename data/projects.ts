@@ -4,6 +4,21 @@ import type { Project } from "@/types";
 // imageUrl の placehold.co は仮サムネ。実スクショは Cloudinary 等に差し替え可
 export const projects: Project[] = [
   // ── AI-Assisted Projects ─────────────────────────────────────────
+  // ── In Development ────────────────────────────────────────────────
+  {
+    id: "true-crime-asia-database",
+    title: "True Crime Asia — Content Management Database",
+    description:
+      "An internal content operations system built for a YouTube true crime channel I'm launching — covering real crimes across Asia. The database tracks every case from initial research through publication: inline-editable cells (like Notion), JP/EN language switching, personal interest ratings, and an appeal-score system backed by high-CPM market research (US, UK, AU). Built with Next.js 16 App Router + SQLite + Server Actions. No external API.",
+    descriptionJa:
+      "今後運営予定のYouTubeチャンネル「True Crime Asia」向けの社内コンテンツ管理システム。案件の調査から公開まで一元管理。Notionライクな全セルインライン編集、日英切替、興味度スコア、US/UK/AUの高単価市場向け訴求スコアを実装。Next.js 16 App Router + SQLite + Server Actionsで構成。外部API不要。",
+    category: "in-development",
+    tags: ["Next.js 16", "SQLite", "Server Actions", "TypeScript", "Tailwind CSS", "i18n", "Content Ops"],
+    imageUrl:
+      "https://placehold.co/800x450/0a0005/7A000E/png?text=True+Crime+Asia+Database",
+    liveUrl: "https://true-crime-asia-database.vercel.app",
+    builtAt: "2026-05",
+  },
   {
     id: "iot-fleet-monitor",
     title: "IoT Fleet Monitor",
