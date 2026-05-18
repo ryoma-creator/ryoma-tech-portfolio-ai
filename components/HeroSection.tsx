@@ -4,16 +4,8 @@ import Image from "next/image";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import { ArrowRight, Download } from "lucide-react";
-import { useCallback, useRef, useState, useEffect } from "react";
-import dynamic from "next/dynamic";
+import { useCallback, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
-const SplineSphere = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-  loading: () => null,
-});
-
-const SPHERE_SCENE = "https://prod.spline.design/rEMCgSJpMLTrWfPE/scene.splinecode";
 
 // Base offset 0.55s — stairs finish clearing at ~0.85s, animations start just before
 const BASE = 0.55;
@@ -66,15 +58,6 @@ export function HeroSection() {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Spline sphere — desktop only, fixed background */}
-      <div
-        aria-hidden
-        className="hidden lg:block"
-        style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, zIndex: 0 }}
-      >
-        <SplineSphere scene={SPHERE_SCENE} style={{ width: "100%", height: "100%" }} />
-      </div>
-
       {/* Moving dust particles */}
       <div aria-hidden className="hero-dust absolute inset-0 pointer-events-none" style={{ zIndex: 2 }} />
 

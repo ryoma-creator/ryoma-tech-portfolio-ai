@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { NavBar } from "@/components/NavBar";
 import { ScrollReset } from "@/components/ScrollReset";
+import { SphereBg } from "@/components/SphereBg";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -45,6 +46,7 @@ export default function RootLayout({
           }}
         />
         <div className="noise-grid" aria-hidden />
+        <SphereBg />
         <LanguageProvider>
           <ScrollReset />
           <NavBar />
