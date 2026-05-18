@@ -63,7 +63,7 @@ export function NavBar() {
             download
             className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors"
           >
-            Download CV
+            Resume
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
@@ -135,7 +135,7 @@ export function NavBar() {
             download
             className="inline-flex items-center gap-2 border border-zinc-600 text-zinc-300 text-sm font-medium px-4 py-2 rounded-full w-fit"
           >
-            Download CV
+            Resume
           </a>
         </div>
       )}
