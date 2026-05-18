@@ -1,18 +1,23 @@
 import { HeroSection } from "@/components/HeroSection";
-import { AchievementsSection } from "@/components/AchievementsSection";
+import { StatsRow } from "@/components/StatsRow";
 import { IntroVideoSection } from "@/components/IntroVideoSection";
 import { ChatSection } from "@/components/ChatSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { AchievementsSection } from "@/components/AchievementsSection";
+import { CTASection } from "@/components/CTASection";
 
-// ポートフォリオのメインページ
 export default function Home() {
   return (
-    <main className="w-full max-w-5xl mx-auto px-4 sm:px-6">
+    <main className="w-full relative z-10" style={{ paddingTop: "64px" }}>
       <HeroSection />
-      <IntroVideoSection />
-      <ChatSection />
-      <ProjectsSection />
-      <AchievementsSection />
+      <StatsRow />
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6" style={{ background: "#050505", position: "relative", zIndex: 10 }}>
+        <IntroVideoSection />
+        <ChatSection />
+        <ProjectsSection />
+        <AchievementsSection />
+      </div>
+      <CTASection />
     </main>
   );
 }
