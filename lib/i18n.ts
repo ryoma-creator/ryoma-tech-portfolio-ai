@@ -27,7 +27,6 @@ export interface I18nStrings {
   aboutP3: string;
   // ChatSection
   askMeAnything: string;
-  chatSubtitle: string;
   questionsLeft1: string;
   questionsLeftN: string; // {n} を数字に置換
   chatEmpty: string;
@@ -61,7 +60,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Just ask the AI chat below.",
     aboutP3: "My background, skills, hobbies — anything. It knows me well.",
     askMeAnything: "Ask Me Anything",
-    chatSubtitle: "My AI alter ego — built for recruiters & clients to get to know me quickly.",
     questionsLeft1: "1 question left today",
     questionsLeftN: "{n} questions left today",
     chatEmpty: "Curious about services, pricing, or my story? Ask away 👋",
@@ -90,7 +88,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "下のAIチャットに聞いてみてください。",
     aboutP3: "経歴、スキル、趣味 — なんでも。よく知っています。",
     askMeAnything: "何でも聞いて",
-    chatSubtitle: "俺のAI分身 — リクルーターやお客さんが俺のことをすぐ知れるように作ってます。",
     questionsLeft1: "本日残り1回",
     questionsLeftN: "本日残り{n}回",
     chatEmpty: "サービスや料金、経歴について気軽に聞いてください 👋",
@@ -119,7 +116,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Frag einfach den KI-Chat unten.",
     aboutP3: "Mein Hintergrund, Skills, Hobbys — alles. Er kennt mich gut.",
     askMeAnything: "Frag mich alles",
-    chatSubtitle: "Mein KI-Alter-Ego — für Recruiter & Kunden, die mich schnell kennenlernen wollen.",
     questionsLeft1: "Noch 1 Frage heute",
     questionsLeftN: "Noch {n} Fragen heute",
     chatEmpty: "Neugierig auf Services, Preise oder meine Geschichte? Frag einfach 👋",
@@ -148,7 +144,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Pregunta al chat de IA de abajo.",
     aboutP3: "Mi trayectoria, habilidades, hobbies — lo que sea. Me conoce bien.",
     askMeAnything: "Pregúntame lo que quieras",
-    chatSubtitle: "Mi alter ego de IA — para que recruiters y clientes me conozcan rápido.",
     questionsLeft1: "1 pregunta restante hoy",
     questionsLeftN: "{n} preguntas restantes hoy",
     chatEmpty: "¿Curioso sobre servicios, precios o mi historia? ¡Pregunta! 👋",
@@ -177,7 +172,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Posez-les au chat IA ci-dessous.",
     aboutP3: "Mon parcours, compétences, loisirs — tout. Il me connaît bien.",
     askMeAnything: "Posez-moi vos questions",
-    chatSubtitle: "Mon alter ego IA — pour que les recruteurs & clients me connaissent vite.",
     questionsLeft1: "1 question restante aujourd'hui",
     questionsLeftN: "{n} questions restantes aujourd'hui",
     chatEmpty: "Curieux sur mes services, tarifs ou mon parcours ? Demandez ! 👋",
@@ -206,7 +200,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Spørg AI-chatten nedenfor.",
     aboutP3: "Min baggrund, kompetencer, hobbyer — alt. Den kender mig godt.",
     askMeAnything: "Spørg mig om alt",
-    chatSubtitle: "Mit AI-alter-ego — til rekrutterere & kunder der vil lære mig at kende hurtigt.",
     questionsLeft1: "1 spørgsmål tilbage i dag",
     questionsLeftN: "{n} spørgsmål tilbage i dag",
     chatEmpty: "Nysgerrig på services, priser eller min historie? Spørg endelig 👋",
@@ -235,7 +228,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "Chiedilo alla chat AI qui sotto.",
     aboutP3: "Il mio background, competenze, hobby — qualsiasi cosa. Mi conosce bene.",
     askMeAnything: "Chiedimi qualsiasi cosa",
-    chatSubtitle: "Il mio alter ego AI — per recruiter & clienti che vogliono conoscermi rapidamente.",
     questionsLeft1: "1 domanda rimasta oggi",
     questionsLeftN: "{n} domande rimaste oggi",
     chatEmpty: "Curioso su servizi, prezzi o la mia storia? Chiedi pure 👋",
@@ -264,7 +256,6 @@ export const translations: Record<Locale, I18nStrings> = {
     aboutP2: "아래 AI 채팅에 물어보세요.",
     aboutP3: "경력, 기술, 취미 — 무엇이든. 저를 잘 알고 있습니다.",
     askMeAnything: "무엇이든 물어보세요",
-    chatSubtitle: "나의 AI 분신 — 채용담당자 & 클라이언트가 나를 빠르게 알 수 있도록.",
     questionsLeft1: "오늘 남은 질문 1개",
     questionsLeftN: "오늘 남은 질문 {n}개",
     chatEmpty: "서비스, 가격, 또는 저에 대해 궁금하신가요? 물어보세요 👋",
