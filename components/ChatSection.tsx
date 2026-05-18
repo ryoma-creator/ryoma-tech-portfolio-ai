@@ -27,7 +27,7 @@ export function ChatSection() {
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isLoading]);
+  }, [messages]);
 
   async function handleSend() {
     const text = input.trim();

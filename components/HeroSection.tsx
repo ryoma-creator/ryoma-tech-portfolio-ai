@@ -5,12 +5,6 @@ import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import { ArrowRight, Download } from "lucide-react";
 import { useCallback, useRef, useState, useEffect } from "react";
-import dynamic from "next/dynamic";
-
-const HeroScene = dynamic(
-  () => import("@/components/HeroScene").then((m) => ({ default: m.HeroScene })),
-  { ssr: false, loading: () => null }
-);
 
 // Base offset 0.55s — stairs finish clearing at ~0.85s, animations start just before
 const BASE = 0.55;
@@ -26,11 +20,6 @@ export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-  }, []);
 
   const springCfg = { stiffness: 40, damping: 22 };
   const ringX  = useSpring(useTransform(mouseX, [-1, 1], [-18, 18]), springCfg);
@@ -60,29 +49,14 @@ export function HeroSection() {
       ref={sectionRef}
       className="relative w-full overflow-hidden"
       style={{
-        background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%)",
+        background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%), #050505",
         paddingTop: "clamp(100px, 14vw, 160px)",
         paddingBottom: "clamp(60px, 8vw, 100px)",
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {/* R3F 3D Background — fixed so it stays as user scrolls, desktop only */}
-      {!isMobile && (
-        <div
-          aria-hidden
-          style={{
-            position: "fixed",
-            top: 0, left: 0, right: 0, bottom: 0,
-            zIndex: 0,
-            overflow: "hidden",
-          }}
-        >
-          <HeroScene />
-        </div>
-      )}
-
-      {/* Moving dust particles — z-2 so they show above Spline */}
+      {/* Moving dust particles */}
       <div aria-hidden className="hero-dust absolute inset-0 pointer-events-none" style={{ zIndex: 2 }} />
 
       {/* Static ambient glow top-right — z-2 above Spline */}
