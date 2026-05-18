@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChatBubble } from "@/components/ChatMessage";
 import { ChatInput } from "@/components/ChatInput";
 import { useChatLimit } from "@/hooks/useChatLimit";
@@ -23,10 +22,12 @@ export function ChatSection() {
   const [isLoading, setIsLoading] = useState(false);
   const { remaining, isLimited, increment } = useChatLimit();
   const { t } = useLanguage();
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
   }, [messages]);
 
   async function handleSend() {
@@ -111,7 +112,7 @@ export function ChatSection() {
         <div className="hidden lg:flex flex-col items-center gap-3 lg:w-[42%]">
           <motion.div
             className="relative w-full"
-            style={{ height: "440px", clipPath: "inset(0 0 48px 0 round 16px)" }}
+            style={{ height: "440px", clipPath: "inset(0 0 120px 0 round 16px)" }}
             animate={
               isLoading
                 ? {
@@ -189,7 +190,7 @@ export function ChatSection() {
 
           {/* チャットボックス */}
           <div className="flex-1 flex flex-col bg-zinc-900/90 backdrop-blur-sm rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
-            <ScrollArea className="h-[360px] p-5">
+            <div ref={scrollRef} className="h-[360px] p-5 overflow-y-auto">
               <AnimatePresence initial={false}>
                 {messages.length === 0 && (
                   <motion.p
@@ -230,8 +231,7 @@ export function ChatSection() {
                   </div>
                 </motion.div>
               )}
-              <div ref={bottomRef} />
-            </ScrollArea>
+            </div>
 
             {/* 入力エリア */}
             <div className="border-t border-zinc-800 p-4">
