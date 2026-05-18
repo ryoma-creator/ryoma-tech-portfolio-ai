@@ -6,6 +6,7 @@ import { VisitorCounter } from "@/components/VisitorCounter";
 import { ArrowRight, Download } from "lucide-react";
 import { useCallback, useRef, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SplineSphere = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
@@ -28,6 +29,7 @@ export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const { t } = useLanguage();
 
   const springCfg = { stiffness: 40, damping: 22 };
   const ringX  = useSpring(useTransform(mouseX, [-1, 1], [-18, 18]), springCfg);
@@ -68,7 +70,7 @@ export function HeroSection() {
       <div
         aria-hidden
         className="hidden lg:block"
-        style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, zIndex: 0, pointerEvents: "none" }}
+        style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, zIndex: 0 }}
       >
         <SplineSphere scene={SPHERE_SCENE} style={{ width: "100%", height: "100%" }} />
       </div>
@@ -110,22 +112,21 @@ export function HeroSection() {
           <motion.p
             {...fu(0.24)}
             style={{ color: "var(--muted)", lineHeight: 1.65, maxWidth: "440px" }}
-            className="text-base"
+            className="text-base whitespace-pre-line"
           >
-            Bilingual developer — JP / EN.<br />
-            From ideation to live site, fast and deliberately.
+            {t.heroBody}
           </motion.p>
 
           <motion.div {...fu(0.36)} className="flex flex-wrap gap-3">
             <a href="#projects" className="btn-gold inline-flex items-center gap-2">
-              View My Work <ArrowRight size={15} strokeWidth={2.2} />
+              {t.viewWork} <ArrowRight size={15} strokeWidth={2.2} />
             </a>
             <a
               href="/resume.ryoma.taguchi.pdf"
               download
               className="btn-ghost inline-flex items-center gap-2"
             >
-              Download CV <Download size={14} strokeWidth={2} />
+              {t.downloadCv} <Download size={14} strokeWidth={2} />
             </a>
           </motion.div>
 

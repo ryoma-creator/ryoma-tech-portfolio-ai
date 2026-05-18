@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { NavBar } from "@/components/NavBar";
 import { PageTransition } from "@/components/PageTransition";
 import { ScrollReset } from "@/components/ScrollReset";
@@ -50,7 +49,6 @@ export default function RootLayout({
         <LanguageProvider>
           <ScrollReset />
           <NavBar />
-          <LanguageSwitcher />
           <PageTransition>{children}</PageTransition>
         </LanguageProvider>
       </body>
