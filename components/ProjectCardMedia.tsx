@@ -33,7 +33,7 @@ export function ProjectCardMedia({ project }: { project: Project }) {
     // 縦型（スマホ録画）: 黒背景+センタリングで自動再生
     if (project.portrait) {
       return (
-        <div className="relative w-full bg-zinc-950 flex items-center justify-center" style={{ height: '320px' }}>
+        <div className="relative w-full flex items-center justify-center" style={{ height: '320px', background: '#06060a' }}>
           <video
             autoPlay
             loop
@@ -96,7 +96,7 @@ export function ProjectCardMedia({ project }: { project: Project }) {
   }
 
   return (
-    <div className="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-900">
+    <div className="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-[#0d0d10] to-[#09090c]">
       <span className="text-4xl opacity-40">
         {project.category === "ai-assisted" ? "🤖" : "💻"}
       </span>

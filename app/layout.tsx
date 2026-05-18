@@ -1,23 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { NavBar } from "@/components/NavBar";
+import { PageTransition } from "@/components/PageTransition";
+import { ScrollReset } from "@/components/ScrollReset";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Ryoma - Freelance Developer",
+  title: "Ryoma — AI-Native Frontend Engineer",
   description:
-    "I build MVPs fast using AI-assisted development. Next.js, TypeScript, Tailwind, Supabase.",
+    "I build fast, cinematic & AI-driven products. React / Next.js / TypeScript. JP-EN Bilingual.",
 };
 
 export default function RootLayout({
@@ -26,15 +32,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // darkクラスで常にダークモードを有効化
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${inter.variable} ${cormorant.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-50">
+      <body
+        className="min-h-full flex flex-col text-[#f5f1e8]"
+        style={{ fontFamily: "var(--font-inter), sans-serif", background: "#050505" }}
+      >
+        {/* Run before hydration — prevents browser scroll restoration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `history.scrollRestoration='manual';window.scrollTo(0,0);`,
+          }}
+        />
+        <div className="noise-grid" aria-hidden />
         <LanguageProvider>
+          <ScrollReset />
+          <NavBar />
           <LanguageSwitcher />
-          {children}
+          <PageTransition>{children}</PageTransition>
         </LanguageProvider>
       </body>
     </html>
