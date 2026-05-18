@@ -51,7 +51,7 @@ export function HeroSection() {
       ref={sectionRef}
       className="relative w-full overflow-hidden"
       style={{
-        background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%), #050505",
+        background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%)",
         paddingTop: "clamp(100px, 14vw, 160px)",
         paddingBottom: "clamp(60px, 8vw, 100px)",
       }}
