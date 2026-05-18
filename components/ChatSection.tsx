@@ -92,7 +92,10 @@ export function ChatSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
           {t.askMeAnything}
         </h2>
-        <p className="text-zinc-500 text-sm">
+        <p className="text-zinc-400 text-sm max-w-sm mx-auto">
+          {t.chatSubtitle}
+        </p>
+        <p className="text-zinc-600 text-xs mt-1">
           {remaining === 1
             ? t.questionsLeft1
             : t.questionsLeftN.replace("{n}", String(remaining))}
