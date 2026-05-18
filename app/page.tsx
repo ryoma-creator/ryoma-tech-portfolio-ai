@@ -10,7 +10,7 @@ export default function Home() {
     <main className="w-full relative z-10" style={{ paddingTop: "64px" }}>
       <HeroSection />
       <StatsRow />
-      <div className="max-w-[1180px] mx-auto px-4 sm:px-6" style={{ background: "#050505", position: "relative", zIndex: 10 }}>
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6" style={{ position: "relative", zIndex: 10 }}>
         <ChatSection />
         <ProjectsSection />
         <AchievementsSection />

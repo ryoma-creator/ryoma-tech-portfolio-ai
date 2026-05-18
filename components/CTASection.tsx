@@ -6,7 +6,7 @@ import { AnimatedLines, FadeUp } from "@/components/AnimatedWords";
 
 export function CTASection() {
   return (
-    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-24 lg:py-32" style={{ background: "#050505" }}>
+    <section className="relative z-10 px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
       <div className="max-w-[1180px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

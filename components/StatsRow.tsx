@@ -16,7 +16,8 @@ export function StatsRow() {
     <section
       className="relative z-10 py-6 sm:py-8"
       style={{
-        background: "#050505",
+        background: "rgba(5,5,5,0.6)",
+        backdropFilter: "blur(8px)",
         borderTop: "1px solid rgba(255,255,255,0.06)",
         borderBottom: "1px solid rgba(255,255,255,0.06)",
       }}

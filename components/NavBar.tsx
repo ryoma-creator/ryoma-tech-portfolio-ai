@@ -44,7 +44,6 @@ export function NavBar() {
         <nav className="hidden md:flex items-center gap-8">
           {[
             { label: "Projects", href: "#projects" },
-            { label: "Works",    href: "#projects" },
             { label: "Contact",  href: "mailto:ryoma.t.engineer@gmail.com" },
           ].map(({ label, href }) => (
             <a
@@ -62,7 +61,7 @@ export function NavBar() {
           <a
             href="/resume.ryoma.taguchi.pdf"
             download
-            className="hidden md:inline-flex items-center gap-2 text-sm font-medium px-4 py-1.5 rounded-full border border-zinc-600 text-zinc-300 hover:border-[#d9a441] hover:text-[#d9a441] transition-colors"
+            className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors"
           >
             Download CV
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
