@@ -3,7 +3,6 @@ import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { NavBar } from "@/components/NavBar";
-import { PageTransition } from "@/components/PageTransition";
 import { ScrollReset } from "@/components/ScrollReset";
 
 const inter = Inter({
@@ -49,7 +48,7 @@ export default function RootLayout({
         <LanguageProvider>
           <ScrollReset />
           <NavBar />
-          <PageTransition>{children}</PageTransition>
+          {children}
         </LanguageProvider>
       </body>
     </html>
