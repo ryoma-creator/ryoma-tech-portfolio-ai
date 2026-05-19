@@ -21,7 +21,6 @@ export function ProjectCard({ project, index }: Props) {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
         onHoverStart={() => setHovered(true)}
         onHoverEnd={() => setHovered(false)}
         whileHover={{ scale: 1.4 }}
@@ -32,9 +31,9 @@ export function ProjectCard({ project, index }: Props) {
           border: hovered ? "1px solid rgba(217,164,65,0.3)" : "1px solid rgba(255,255,255,0.07)",
           borderRadius: "20px",
           boxShadow: hovered ? "0 0 40px rgba(217,164,65,0.15), 0 24px 60px rgba(0,0,0,0.5)" : "none",
-          transition: "border-color 0.2s, box-shadow 0.2s, z-index 0s",
+          transition: "border-color 0.2s, box-shadow 0.2s",
         }}
-        transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.22, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
       >
         {/* Media */}
         <div style={{ borderRadius: "20px 20px 0 0", overflow: "hidden" }}>
