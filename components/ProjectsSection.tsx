@@ -52,7 +52,7 @@ export function ProjectsSection() {
               <span className="text-[11px] text-[#a6a09a]">{filtered.length} projects</span>
             </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start" style={{ overflow: "visible" }}>
               {filtered.map((project, i) => (
                 <ProjectCard key={project.id} project={project} index={i} />
               ))}

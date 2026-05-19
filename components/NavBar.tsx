@@ -49,7 +49,7 @@ export function NavBar() {
             <a
               key={label}
               href={href}
-              className="text-zinc-400 hover:text-white text-sm font-medium transition-colors"
+              className="text-zinc-400 text-sm font-medium transition-colors hover:text-[#d9a441]"
             >
               {label}
             </a>
@@ -61,7 +61,7 @@ export function NavBar() {
           <a
             href="/resume.ryoma.taguchi.pdf"
             download
-            className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+            className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-[#d9a441] transition-colors"
           >
             Resume
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

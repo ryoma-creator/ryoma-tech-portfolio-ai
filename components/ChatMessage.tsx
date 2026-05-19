@@ -12,7 +12,7 @@ export function ChatBubble({ message }: Props) {
     <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-3`}>
       {/* アシスタントのアバター */}
       {!isUser && (
-        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-zinc-700 flex items-center justify-center text-xs mr-2 mt-1">
+        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#d9a441] flex items-center justify-center text-[10px] font-bold text-zinc-900 mr-2 mt-1">
           AI
         </div>
       )}

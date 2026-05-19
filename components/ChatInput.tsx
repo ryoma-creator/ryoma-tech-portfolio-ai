@@ -26,21 +26,21 @@ export function ChatInput({ value, onChange, onSend, isLoading }: Props) {
   }
 
   return (
-    <div className="flex gap-2 items-end">
+    <div className="flex gap-2 items-stretch">
       <Textarea
         ref={textareaRef}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder={t.chatPlaceholder}
-        className="resize-none bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 min-h-[60px] max-h-[120px]"
-        rows={2}
+        className="resize-none bg-zinc-800 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 min-h-[44px] max-h-[120px]"
+        rows={1}
         disabled={isLoading}
       />
       <Button
         onClick={onSend}
         disabled={isLoading || !value.trim()}
-        className="bg-zinc-100 text-zinc-900 hover:bg-white shrink-0"
+        className="bg-[#d9a441] text-zinc-900 hover:bg-[#f1c56b] shrink-0 font-semibold disabled:opacity-40 self-stretch h-auto"
       >
         {isLoading ? "..." : t.send}
       </Button>
