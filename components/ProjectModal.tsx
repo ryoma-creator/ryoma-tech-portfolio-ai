@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectCardMedia } from "@/components/ProjectCardMedia";
+import { ProjectGuide } from "@/components/ProjectGuide";
 import type { Project } from "@/types";
 
 interface Props {
@@ -113,6 +114,9 @@ export function ProjectModal({ project, onClose }: Props) {
                     </span>
                   ))}
                 </div>
+
+                {/* 使い方ガイド（あるときだけ表示） */}
+                {project.guide && <ProjectGuide guide={project.guide} />}
 
                 {/* Links */}
                 {(project.liveUrl ?? project.githubUrl) && (

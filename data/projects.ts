@@ -166,6 +166,93 @@ export const projects: Project[] = [
 
   // ── LP & Client Work ────────────────────────────────────────────
   {
+    id: "lumina-clinic-demo",
+    title: "LUMINA — Beauty Clinic Marketing Command Center",
+    description:
+      "An industry AI demo: a marketing command center for beauty clinics. It maps the patient journey (acquisition → visit → closing → repeat), spotlights exactly where patients leak out, and lets AI plug those gaps — from ad planning and no-show defense to counseling analysis — across 100 clinics. Includes a captioned walkthrough video and a beginner's how-to guide.",
+    descriptionJa:
+      "業界特化AIデモ。美容クリニック向けマーケティング司令塔。集患→来院→成約→再来の患者導線を可視化し、患者が“漏れる”場所をAIが先回りで塞ぐ。集患プランニング・来院ディフェンス・カウンセリング解析など11機能を全国100院規模で統合。字幕付きウォークスルー動画と初心者向け使い方ガイド付き。",
+    category: "lp-demo",
+    tags: ["AI Demo", "Next.js", "Dashboard", "Marketing", "Healthcare", "TypeScript"],
+    videoUrl: "/demos/lumina-clinic.mp4",
+    imageUrl: "/demos/lumina-clinic.png",
+    autoplay: true,
+    liveUrl: "https://industry-ai-demos.vercel.app/demos/clinic/",
+    builtAt: "2026-06",
+    guide: {
+      intro:
+        "美容クリニックの売上は「集患→来院→成約→再来」の一本道。LUMINA は患者が“漏れる”場所をAIが見張り、先回りで塞ぐ運営司令塔です。操作はたった3ステップ。",
+      steps: [
+        {
+          title: "① 朝、司令塔ダッシュボードを開く",
+          description:
+            "今日どこで患者が漏れているかが“赤い数字”で一目に。左サイドバーの「司令塔ダッシュボード」から開けます。探す必要はありません。",
+        },
+        {
+          title: "② AIマーケ参謀に「どうする?」と聞く",
+          description:
+            "右上の「AIに相談」から質問するだけ。いま効く機能へワンクリックで案内されます。専門知識は要りません。",
+        },
+        {
+          title: "③ 指示どおり、機能を動かす",
+          description:
+            "集患プランニング・来院ディフェンス・カウンセリング解析など、患者の流れに沿った11機能を使うだけ。特に本丸は「カウンセリング解析」。",
+        },
+        {
+          title: "成果は数字で自動で返る",
+          description:
+            "改善はダッシュボードに自動反映。広告費は1円も増やさず、毎月¥861万の回収余地を狙えます。",
+        },
+      ],
+    },
+  },
+  {
+    id: "sns-ops-ai-demo",
+    title: "SNS Ops AI — AI Command Center for Agencies",
+    description:
+      "An industry AI demo: an AI command center for social media management agencies. It runs daily SNS operations across multiple client accounts — generating real image/video creatives and post copy, logging time saved, and surfacing approvals — so people focus on decisions and sign-off. 100 AI tasks across 13 categories. Includes a captioned walkthrough video and a beginner's how-to guide.",
+    descriptionJa:
+      "業界特化AIデモ。SNS運用代理店向けAIコマンドセンター。担当6社のSNS運用を横断管理し、AIが画像・動画クリエイティブや投稿文などの“現物”まで自動生成。削減時間・承認待ちを可視化し、人は意思決定と承認に集中。全13カテゴリ・100業務。字幕付きウォークスルー動画と初心者向け使い方ガイド付き。",
+    category: "lp-demo",
+    tags: ["AI Demo", "Next.js", "Social Media", "Automation", "Dashboard", "TypeScript"],
+    videoUrl: "/demos/sns-ops-ai.mp4",
+    imageUrl: "/demos/sns-ops-ai.png",
+    autoplay: true,
+    liveUrl: "https://sns-ai-generator.vercel.app/",
+    builtAt: "2026-06",
+    guide: {
+      intro:
+        "SNS運用代理店のためのAIコマンドセンター。担当クライアント6社のSNS運用を横断管理し、AIが“現物”の投稿クリエイティブまで仕上げます。人は意思決定と承認に集中できます。",
+      steps: [
+        {
+          title: "① ホームで全体の稼働を確認",
+          description:
+            "本日AIが処理した仕事・削減時間・あなたの承認待ち件数が一目で分かります。",
+        },
+        {
+          title: "② 業務カテゴリを選ぶ",
+          description:
+            "左メニューから全13カテゴリ・100業務を選択。コンテンツ企画、投稿文ライティング、分析など、気になる領域から始められます。",
+        },
+        {
+          title: "③ やりたい業務を開く",
+          description:
+            "Before / After で“何がどう変わるか”を確認し、クライアントとSNS媒体（X / Instagram など）を選びます。",
+        },
+        {
+          title: "④「AIで実行する」を押すだけ",
+          description:
+            "数十分の手作業が数秒に。画像・動画・投稿文などの成果物がそのまま出力されます。",
+        },
+        {
+          title: "⑤ 承認して完了",
+          description:
+            "人は最終チェックと承認だけ。承認待ちはダッシュボードでまとめて管理できます。",
+        },
+      ],
+    },
+  },
+  {
     id: "beauty-salon-lp",
     title: "Beauty Salon LP — &.LUMI hair salon",
     description:
