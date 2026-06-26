@@ -14,6 +14,21 @@ export interface ChatUsage {
   date: string; // "YYYY-MM-DD" 形式
 }
 
+// 使い方ガイドの型（初心者向けステップ解説）
+export interface ProjectGuideStep {
+  /** ステップの見出し */
+  title: string;
+  /** ステップの説明 */
+  description: string;
+}
+
+export interface ProjectGuide {
+  /** ガイド冒頭の一言（任意） */
+  intro?: string;
+  /** 番号付きステップ */
+  steps: ProjectGuideStep[];
+}
+
 // プロジェクトの型
 export type ProjectCategory = "ai-assisted" | "hand-coded" | "lp-demo" | "in-development";
 
@@ -38,6 +53,8 @@ export interface Project {
   autoplay?: boolean;
   /** true のとき縦型（スマホ録画）として表示 */
   portrait?: boolean;
+  /** 初心者向けの使い方ガイド（あるとモーダルに表示） */
+  guide?: ProjectGuide;
 }
 
 // APIリクエスト・レスポンスの型
