@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { StatsRow } from "@/components/StatsRow";
+import { IntroVideoSection } from "@/components/IntroVideoSection";
 import { ChatSection } from "@/components/ChatSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { AchievementsSection } from "@/components/AchievementsSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <StatsRow />
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6" style={{ position: "relative", zIndex: 10 }}>
+        <IntroVideoSection />
         <ChatSection />
         <ProjectsSection />
         <AchievementsSection />

@@ -3,6 +3,22 @@ import type { Project } from "@/types";
 // ポートフォリオプロジェクトのデータ（実績ベース）
 // imageUrl の placehold.co は仮サムネ。実スクショは Cloudinary 等に差し替え可
 export const projects: Project[] = [
+  // ── Shipped — Live on the App Store ──────────────────────────────
+  {
+    id: "clear-subscription-tracker",
+    title: "Clear — Subscription Tracker",
+    description:
+      "A private, 100% offline subscription tracker for iPhone — live on the App Store. Add your subscriptions once and always know what you're paying, when renewals hit, and where to cut. No account, no sign-up, no bank linking, no ads; everything stays on your device. Built solo with React Native (Expo) + Claude Code and shipped through Apple App Review.",
+    descriptionJa:
+      "iPhone向けの完全オフライン・プライバシー重視のサブスク管理アプリ。App Storeで公開中。サブスクを一度登録すれば、支払額・更新日・見直しどころが一目でわかる。アカウント不要・サインアップ不要・銀行連携なし・広告なし、データは端末内のみ。React Native (Expo) + Claude Code で個人開発し、Apple審査を通過して公開。",
+    category: "shipped",
+    tags: ["React Native", "Expo", "iOS", "TypeScript", "App Store", "RevenueCat"],
+    imageUrl: "/clear-home.png",
+    liveUrl: "https://apps.apple.com/app/id6784011185",
+    portrait: true,
+    builtAt: "2026-07",
+  },
+
   // ── AI-Assisted Projects ─────────────────────────────────────────
   // ── In Development ────────────────────────────────────────────────
   {

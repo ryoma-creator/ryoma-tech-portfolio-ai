@@ -15,7 +15,7 @@ export interface ChatUsage {
 }
 
 // プロジェクトの型
-export type ProjectCategory = "ai-assisted" | "hand-coded" | "lp-demo" | "in-development";
+export type ProjectCategory = "shipped" | "ai-assisted" | "hand-coded" | "lp-demo" | "in-development";
 
 export interface Project {
   id: string;

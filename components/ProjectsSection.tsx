@@ -6,6 +6,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { AnimatedWords, FadeUp } from "@/components/AnimatedWords";
 
 const CATEGORIES: { key: string; label: string }[] = [
+  { key: "shipped",        label: "Live on the App Store" },
   { key: "in-development", label: "In Development" },
   { key: "lp-demo",        label: "LP & Client Work" },
   { key: "ai-assisted",    label: "AI-Assisted" },
@@ -29,7 +30,7 @@ export function ProjectsSection() {
       {CATEGORIES.map(({ key, label }) => {
         const filtered = projects.filter((p) => p.category === key);
         if (!filtered.length) return null;
-        const isActive = key === "in-development";
+        const isActive = key === "shipped" || key === "in-development";
 
         return (
           <div key={key} className="mb-12">
