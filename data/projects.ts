@@ -28,9 +28,9 @@ export const projects: Project[] = [
     id: "clear-subscription-tracker",
     title: "Clear — Subscription Tracker",
     description:
-      "A private, 100% offline subscription tracker for iPhone — live on the App Store. Add your subscriptions once and always know what you're paying, when renewals hit, and where to cut. No account, no sign-up, no bank linking, no ads; everything stays on your device. Built solo with React Native (Expo) + Claude Code and shipped through Apple App Review.",
+      "A private, 100% offline subscription tracker for iPhone — live on the App Store. Add your subscriptions once and always know what you're paying, when renewals hit, and where to cut. No account, no sign-up, no bank linking, no ads; everything stays on your device. Built solo with React Native (Expo) + Claude Code and shipped through Apple App Review. The version on the store today is v1.0; a major update — two months of redesign work with new animations — is currently in App Store review, so the store version doesn't show it yet.",
     descriptionJa:
-      "iPhone向けの完全オフライン・プライバシー重視のサブスク管理アプリ。App Storeで公開中。サブスクを一度登録すれば、支払額・更新日・見直しどころが一目でわかる。アカウント不要・サインアップ不要・銀行連携なし・広告なし、データは端末内のみ。React Native (Expo) + Claude Code で個人開発し、Apple審査を通過して公開。",
+      "iPhone向けの完全オフライン・プライバシー重視のサブスク管理アプリ。App Storeで公開中。サブスクを一度登録すれば、支払額・更新日・見直しどころが一目でわかる。アカウント不要・サインアップ不要・銀行連携なし・広告なし、データは端末内のみ。React Native (Expo) + Claude Code で個人開発し、Apple審査を通過して公開。現在ストアにあるのはv1.0。約2ヶ月かけたデザイン刷新＋アニメーション追加の大型アップデートは現在App Store審査中で、ストア版にはまだ反映されていない。",
     category: "shipped",
     tags: ["React Native", "Expo", "iOS", "TypeScript", "App Store", "RevenueCat"],
     imageUrl: "/clear-home.png",
