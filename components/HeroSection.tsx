@@ -248,7 +248,7 @@ export function HeroSection() {
                 {/* White-bg photo: multiply blend removes white background */}
                 <Image
                   src="/hero-photo-new.png"
-                  alt="Ryoma"
+                  alt="AI-generated illustration (made with GPT)"
                   fill
                   priority
                   className="object-cover object-top"
@@ -277,6 +277,13 @@ export function HeroSection() {
                     borderRadius: "0 0 20px 20px",
                   }}
                 />
+                {/* 画像はGPT生成であることを小さく明記 */}
+                <span
+                  className="absolute z-20 pointer-events-none"
+                  style={{ top: "10px", left: "12px", fontSize: "10px", letterSpacing: "0.04em", color: "rgba(245,241,232,0.45)" }}
+                >
+                  Image: AI-generated (GPT)
+                </span>
               </motion.div>
             </motion.div>
           </motion.div>

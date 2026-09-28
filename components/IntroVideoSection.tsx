@@ -31,7 +31,9 @@ export function IntroVideoSection() {
           />
 
           <div
+            className="mx-auto lg:mx-0"
             style={{
+              width: "min(100%, 260px)",
               borderRadius: "20px",
               border: "1px solid rgba(255,255,255,0.07)",
               overflow: "hidden",
@@ -40,11 +42,12 @@ export function IntroVideoSection() {
           >
             <video
               src={VIDEO_SRC}
+              poster="https://res.cloudinary.com/da3abynbu/video/upload/so_2,q_auto,f_jpg/v1775221576/portfolio-video_r2vz1d.jpg"
               playsInline
               controls
               preload="metadata"
-              className="w-full block aspect-video"
-              style={{ objectFit: "cover", background: "#08080a", maxHeight: "400px" }}
+              className="block w-full"
+              style={{ aspectRatio: "9 / 16", objectFit: "contain", background: "#08080a" }}
             />
           </div>
 

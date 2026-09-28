@@ -45,6 +45,11 @@ export function ProjectCard({ project, index }: Props) {
           <h3 style={{ color: "#f5f1e8", fontSize: "15px", fontWeight: 600, lineHeight: 1.3 }}>
             {project.title}
           </h3>
+          {project.tagline && (
+            <p style={{ color: "rgba(245,241,232,0.62)", fontSize: "12.5px", lineHeight: 1.5, marginTop: "6px" }}>
+              {project.tagline}
+            </p>
+          )}
         </div>
 
         {/* Hover overlay — absolute, zero layout impact */}

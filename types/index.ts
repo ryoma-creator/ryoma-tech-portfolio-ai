@@ -22,6 +22,8 @@ export interface Project {
   title: string;
   description: string;
   descriptionJa?: string;
+  /** カードのタイトル下に常に出す一言（重要な作品だけ） */
+  tagline?: string;
   category: ProjectCategory;
   tags: string[];
   /** Cloudinary Video Player 等の iframe（カードでは最優先） */

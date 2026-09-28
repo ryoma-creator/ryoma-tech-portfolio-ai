@@ -11,6 +11,7 @@ export const projects: Project[] = [
       "The project I'm proudest of. Written by hand from August 2024 to February 2025, before Claude Code existed. I migrated it from React to Next.js myself, studied Jakob Nielsen's usability principles and rebuilt the UI/UX again and again, and hand-tuned every animation (Framer Motion, GSAP, Three.js). When local media pushed the Git repo past its size limit and I lost four months of commit history, I moved the media to Cloudinary, cut the repo size by 80%, and learned Git the hard way. Includes a contact form with automatic branded replies.",
     descriptionJa:
       "一番思い入れのある作品。Claude Code が登場する前の 2024年8月〜2025年2月に、自分の手でコードを書いて作った。React から Next.js への移行も手作業で行い、Jakob Nielsen のユーザビリティ原則を学んでは UI/UX を何度も作り直し、アニメーション(Framer Motion・GSAP・Three.js)も一つずつ調整した。画像や動画を手元に置いたせいでリポジトリが容量を超え、4か月分のコミット履歴を失ったが、Cloudinary に移してリポジトリを80%軽くし、Git を身をもって学んだ。問い合わせフォームには自動返信メール付き。",
+    tagline: "Written by hand before Claude Code existed — rebuilt again and again for UI/UX, Aug 2024 – Feb 2025.",
     category: "origin",
     tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
     videoUrl:
@@ -31,6 +32,7 @@ export const projects: Project[] = [
       "A private, 100% offline subscription tracker for iPhone — live on the App Store. Add your subscriptions once and always know what you're paying, when renewals hit, and where to cut. No account, no sign-up, no bank linking, no ads; everything stays on your device. Built solo with React Native (Expo) + Claude Code and shipped through Apple App Review. The version on the store today is v1.0; a major update — two months of redesign work with new animations — is currently in App Store review, so the store version doesn't show it yet.",
     descriptionJa:
       "iPhone向けの完全オフライン・プライバシー重視のサブスク管理アプリ。App Storeで公開中。サブスクを一度登録すれば、支払額・更新日・見直しどころが一目でわかる。アカウント不要・サインアップ不要・銀行連携なし・広告なし、データは端末内のみ。React Native (Expo) + Claude Code で個人開発し、Apple審査を通過して公開。現在ストアにあるのはv1.0。約2ヶ月かけたデザイン刷新＋アニメーション追加の大型アップデートは現在App Store審査中で、ストア版にはまだ反映されていない。",
+    tagline: "v1.0 is live. A two-month redesign with new animations is now in App Store review.",
     category: "shipped",
     tags: ["React Native", "Expo", "iOS", "TypeScript", "App Store", "RevenueCat"],
     imageUrl: "/clear-home.png",
