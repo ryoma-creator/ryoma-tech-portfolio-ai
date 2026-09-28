@@ -6,6 +6,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { AnimatedWords, FadeUp } from "@/components/AnimatedWords";
 
 const CATEGORIES: { key: string; label: string }[] = [
+  { key: "origin",         label: "Where It Started — Hand-Coded, Aug 2024 – Feb 2025" },
   { key: "shipped",        label: "Live on the App Store" },
   { key: "in-development", label: "In Development" },
   { key: "lp-demo",        label: "LP & Client Work" },

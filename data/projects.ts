@@ -3,6 +3,26 @@ import type { Project } from "@/types";
 // ポートフォリオプロジェクトのデータ（実績ベース）
 // imageUrl の placehold.co は仮サムネ。実スクショは Cloudinary 等に差し替え可
 export const projects: Project[] = [
+  // ── Where It Started — 手書きの初代ポートフォリオ(Claude Code 以前) ──
+  {
+    id: "portfolio-v1",
+    title: "My First Portfolio — Hand-Coded (2024–2025)",
+    description:
+      "The project I'm proudest of. Written by hand from August 2024 to February 2025, before Claude Code existed. I migrated it from React to Next.js myself, studied Jakob Nielsen's usability principles and rebuilt the UI/UX again and again, and hand-tuned every animation (Framer Motion, GSAP, Three.js). When local media pushed the Git repo past its size limit and I lost four months of commit history, I moved the media to Cloudinary, cut the repo size by 80%, and learned Git the hard way. Includes a contact form with automatic branded replies.",
+    descriptionJa:
+      "一番思い入れのある作品。Claude Code が登場する前の 2024年8月〜2025年2月に、自分の手でコードを書いて作った。React から Next.js への移行も手作業で行い、Jakob Nielsen のユーザビリティ原則を学んでは UI/UX を何度も作り直し、アニメーション(Framer Motion・GSAP・Three.js)も一つずつ調整した。画像や動画を手元に置いたせいでリポジトリが容量を超え、4か月分のコミット履歴を失ったが、Cloudinary に移してリポジトリを80%軽くし、Git を身をもって学んだ。問い合わせフォームには自動返信メール付き。",
+    category: "origin",
+    tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
+    videoUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.mp4",
+    imageUrl:
+      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.jpg",
+    autoplay: true,
+    liveUrl: "https://my-portfolio-website-lake.vercel.app/",
+    githubUrl: "https://github.com/ryoma-creator/my-portfolio-website",
+    builtAt: "2025-02",
+  },
+
   // ── Shipped — Live on the App Store ──────────────────────────────
   {
     id: "clear-subscription-tracker",
@@ -211,24 +231,7 @@ export const projects: Project[] = [
   },
 
   // ── Hand-Coded Projects ──────────────────────────────────────────
-  {
-    id: "portfolio-v1",
-    title: "Portfolio Website v1",
-    description:
-      "A personal portfolio site rebuilt 5 times as design skills grew. Features smooth animations throughout, and a contact form that automatically sends a reply email to anyone who reaches out.",
-    descriptionJa:
-      "スキル向上とともに5回作り直したポートフォリオサイト。全体にスムーズなアニメーションを実装し、問い合わせフォームから自動返信メールを送信する機能付き。",
-    category: "hand-coded",
-    tags: ["Next.js", "Node.js", "TypeScript", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
-    videoUrl:
-      "https://res.cloudinary.com/dnm2fyhwt/video/upload/f_mp4,vc_h264,q_auto/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.mp4",
-    imageUrl:
-      "https://res.cloudinary.com/dnm2fyhwt/video/upload/so_0,w_800,c_fill,q_auto,f_jpg/Screen_Recording_2026-04-08_at_7.05.19_PM_iqiekz.jpg",
-    autoplay: true,
-    liveUrl: "https://my-portfolio-website-lake.vercel.app/",
-    githubUrl: "https://github.com/ryoma-creator/portfolio-3",
-    builtAt: "2025-02",
-  },
+
   {
     id: "ecommerce",
     title: "E-Commerce Website",
