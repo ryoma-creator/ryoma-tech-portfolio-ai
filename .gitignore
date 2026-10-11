@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# remotion（紹介動画の制作用）
+/remotion/node_modules
+/remotion/out

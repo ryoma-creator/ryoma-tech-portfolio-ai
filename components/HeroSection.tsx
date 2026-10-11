@@ -51,13 +51,23 @@ export function HeroSection() {
       ref={sectionRef}
       className="relative w-full overflow-hidden"
       style={{
-        background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%)",
         paddingTop: "clamp(100px, 14vw, 160px)",
         paddingBottom: "clamp(60px, 8vw, 100px)",
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
+      {/* 背景グロー — 上に紹介動画があるので、上端だけフェードさせて境目を消す */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "radial-gradient(circle at 70% 10%, rgba(217,164,65,0.12), transparent 32%), radial-gradient(circle at 20% 60%, rgba(255,255,255,0.03), transparent 28%)",
+          maskImage: "linear-gradient(to bottom, transparent, black 160px)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 160px)",
+        }}
+      />
+
       {/* Moving dust particles */}
       <div aria-hidden className="hero-dust absolute inset-0 pointer-events-none" style={{ zIndex: 2 }} />
 
@@ -65,7 +75,12 @@ export function HeroSection() {
       <div
         aria-hidden
         className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
-        style={{ zIndex: 2, background: "radial-gradient(circle at 80% 20%, rgba(217,164,65,0.12), transparent 55%)" }}
+        style={{
+          zIndex: 2,
+          background: "radial-gradient(circle at 80% 20%, rgba(217,164,65,0.12), transparent 55%)",
+          maskImage: "linear-gradient(to bottom, transparent, black 160px)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 160px)",
+        }}
       />
 
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center gap-10 lg:gap-0 relative z-10">

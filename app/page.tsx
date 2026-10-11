@@ -1,3 +1,4 @@
+import { IntroReelSection } from "@/components/IntroReelSection";
 import { HeroSection } from "@/components/HeroSection";
 import { StatsRow } from "@/components/StatsRow";
 import { IntroVideoSection } from "@/components/IntroVideoSection";
@@ -9,6 +10,7 @@ import { CTASection } from "@/components/CTASection";
 export default function Home() {
   return (
     <main className="w-full relative z-10" style={{ paddingTop: "64px" }}>
+      <IntroReelSection />
       <HeroSection />
       <StatsRow />
       <div className="max-w-[1180px] mx-auto px-4 sm:px-6" style={{ position: "relative", zIndex: 10 }}>

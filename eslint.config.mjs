@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // 紹介動画の制作用 Remotion プロジェクト（サイトのビルド対象外）
+    "remotion/**",
   ]),
 ]);
 
